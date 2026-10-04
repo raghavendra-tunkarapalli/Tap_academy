@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traveler Vlog & Location Showcase | 10 Destination iFrames</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ===================================================
+       HEADER & NAVIGATION BAR
+  =================================================== -->
+  <nav id="nav">
+    <div class="nav-brand">
+      <h2>Traveler Vlog Hub</h2>
+      <span class="brand-badge">iFrame Showcase</span>
+    </div>
+
+    <ul class="project-nav" aria-label="Projects">
+      <li><a href="../Media/index.html">Media Player</a></li>
+      <li><a href="../Lists/index.html">List Project</a></li>
+      <li><a href="../Tables/index.html">Table Project</a></li>
+      <li><a href="./index.html" aria-current="page">Traveler Vlog</a></li>
+      <li><a href="https://tunkarapalliraghavendraportfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a></li>
+    </ul>
+
+    <div class="search-wrapper">
+      <input type="search" id="searchInput" placeholder="Search destination, country, tag (e.g. Paris, Tokyo, iframe)..." />
+    </div>
+  </nav>
+
+  <!-- ===================================================
+       FILTER PILLS / CONTINENT NAV
+  =================================================== -->
+  <div class="filter-bar">
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All 10 Destinations</button>
+      <button class="filter-btn" data-filter="europe">Europe (4)</button>
+      <button class="filter-btn" data-filter="asia">Asia (3)</button>
+      <button class="filter-btn" data-filter="americas">Americas (1)</button>
+      <button class="filter-btn" data-filter="middle-east-africa">Middle East &amp; Africa (2)</button>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MAIN CONTAINER
+  =================================================== -->
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Interactive Destination Vlogs &amp; Location iFrames</h2>
+      <p class="section-desc">Explore 10 world-class travel locations embedded with responsive HTML5 <code>&lt;iframe&gt;</code> maps, attributes, security policies, and live code.</p>
+    </div>
+
+    <div class="vlog-grid">
+
+      <!-- =====================================
+           VLOG 1: PARIS, FRANCE
+      ====================================== -->
+      <div class="vlog-card-layout" data-region="europe">
+        <div class="vlog-card">
+          <div class="vlog-header-info">
+            <div class="card-title-row">
+              <h3>1. Eiffel Tower &amp; Champ de Mars</h3>
+              <span class="region-badge">Europe</span>
+            </div>
+            <p class="location-subtitle">📍 Paris, Île-de-France, France 🇫🇷</p>
+          </div>
+
+          <!-- Embedded Map iFrame -->
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Eiffel+Tower+Paris+France&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Eiffel Tower Paris Location Map">
+            </iframe>
+          </div>
+
+          <div class="vlog-meta-info">
+            <div class="meta-item"><strong>Highlight:</strong> Romantic Sunset &amp; Light Show</div>
+            <div class="meta-item"><strong>Best Season:</strong> May – September</div>
+          </div>
+
+          <div class="vlog-features">
+            <ul class="properties-list">
+              <li>&lt;iframe&gt;</li>
+              <li>loading="lazy"</li>
+              <li>allowfullscreen</li>
+              <li>referrerpolicy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="code-box-header">
+            <span class="code-lang">HTML &lt;iframe&gt;</span>
+            <button class="copy-btn" title="Copy code">Copy</button>
+          </div>
+          <pre><code>&lt;<span class="html-tag">iframe</span>
+  <span class="html-attr">src</span>=<span class="html-val">"https://maps.google.com/maps?q=Eiffel+Tower+Paris+France&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"</span>
+  <span class="html-attr">width</span>=<span class="html-val">"100%"</span>
+  <span class="html-attr">height</span>=<span class="html-val">"260"</span>
+  <span class="html-attr">style</span>=<span class="html-val">"border: 0;"</span>
+  <span class="html-attr">allowfullscreen</span>=<span class="html-val">""</span>
+  <span class="html-attr">loading</span>=<span class="html-val">"lazy"</span>
+  <span class="html-attr">referrerpolicy</span>=<span class="html-val">"no-referrer-when-downgrade"</span>
+  <span class="html-attr">title</span>=<span class="html-val">"Eiffel Tower Paris Location Map"</span>&gt;
+&lt;/<span class="html-tag">iframe</span>&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- =====================================
+           VLOG 2: TOKYO, JAPAN
+      ====================================== -->
+      <div class="vlog-card-layout" data-region="asia">
+        <div class="vlog-card">
+          <div class="vlog-header-info">
+            <div class="card-title-row">
+              <h3>2. Shibuya Crossing &amp; Neon Scramble</h3>
+              <span class="region-badge">Asia</span>
+            </div>
+            <p class="location-subtitle">📍 Shibuya, Tokyo Metropolis, Japan 🇯🇵</p>
+          </div>
+
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Shibuya+Crossing+Tokyo+Japan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Shibuya Crossing Tokyo Map">
+            </iframe>
+          </div>
+
+          <div class="vlog-meta-info">
+            <div class="meta-item"><strong>Highlight:</strong> Cyberpunk Neon &amp; Ramen Alleyways</div>
+            <div class="meta-item"><strong>Best Season:</strong> March – May (Cherry Blossom)</div>
+          </div>
+
+          <div class="vlog-features">
+            <ul class="properties-list">
+              <li>&lt;iframe&gt;</li>
+              <li>loading="lazy"</li>
+              <li>allowfullscreen</li>
+              <li>width="100%"</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="code-box-header">
+            <span class="code-lang">HTML &lt;iframe&gt;</span>
+            <button class="copy-btn" title="Copy code">Copy</button>
+          </div>
+          <pre><code>&lt;<span class="html-tag">iframe</span>
+  <span class="html-attr">src</span>=<span class="html-val">"https://maps.google.com/maps?q=Shibuya+Crossing+Tokyo+Japan&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"</span>
+  <span class="html-attr">width</span>=<span class="html-val">"100%"</span>
+  <span class="html-attr">height</span>=<span class="html-val">"260"</span>
+  <span class="html-attr">style</span>=<span class="html-val">"border: 0;"</span>
+  <span class="html-attr">allowfullscreen</span>=<span class="html-val">""</span>
+  <span class="html-attr">loading</span>=<span class="html-val">"lazy"</span>
+  <span class="html-attr">referrerpolicy</span>=<span class="html-val">"no-referrer-when-downgrade"</span>
+  <span class="html-attr">title</span>=<span class="html-val">"Shibuya Crossing Tokyo Map"</span>&gt;
+&lt;/<span class="html-tag">iframe</span>&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- =====================================
+           VLOG 3: SANTORINI, GREECE
+      ====================================== -->
+      <div class="vlog-card-layout" data-region="europe">
+        <div class="vlog-card">
+          <div class="vlog-header-info">
+            <div class="card-title-row">
+              <h3>3. Oia Caldera &amp; Aegean Sea</h3>
+              <span class="region-badge">Europe</span>
+            </div>
+            <p class="location-subtitle">📍 Oia, Santorini Island, Greece 🇬🇷</p>
+          </div>
+
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Oia+Santorini+Greece&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Santorini Oia Caldera Map">
+            </iframe>
+          </div>
+
+          <div class="vlog-meta-info">
+            <div class="meta-item"><strong>Highlight:</strong> Whitewashed Cliffside Villages &amp; Sunset</div>
+            <div class="meta-item"><strong>Best Season:</strong> June – September</div>
+          </div>
+
+          <div class="vlog-features">
+            <ul class="properties-list">
+              <li>&lt;iframe&gt;</li>
+              <li>loading="lazy"</li>
+              <li>caldera view</li>
+              <li>responsive map</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="code-box-header">
+            <span class="code-lang">HTML &lt;iframe&gt;</span>
+            <button class="copy-btn" title="Copy code">Copy</button>
+          </div>
+          <pre><code>&lt;<span class="html-tag">iframe</span>
+  <span class="html-attr">src</span>=<span class="html-val">"https://maps.google.com/maps?q=Oia+Santorini+Greece&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"</span>
+  <span class="html-attr">width</span>=<span class="html-val">"100%"</span>
+  <span class="html-attr">height</span>=<span class="html-val">"260"</span>
+  <span class="html-attr">style</span>=<span class="html-val">"border: 0;"</span>
+  <span class="html-attr">allowfullscreen</span>=<span class="html-val">""</span>
+  <span class="html-attr">loading</span>=<span class="html-val">"lazy"</span>
+  <span class="html-attr">referrerpolicy</span>=<span class="html-val">"no-referrer-when-downgrade"</span>
+  <span class="html-attr">title</span>=<span class="html-val">"Santorini Oia Caldera Map"</span>&gt;
+&lt;/<span class="html-tag">iframe</span>&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- =====================================
+           VLOG 4: SWISS ALPS (MATTERHORN)
+      ====================================== -->
+      <div class="vlog-card-layout" data-region="europe">
+        <div class="vlog-card">
+          <div class="vlog-header-info">
+            <div class="card-title-row">
+              <h3>4. Matterhorn Alpine Glaciers</h3>
+              <span class="region-badge">Europe</span>
+            </div>
+            <p class="location-subtitle">📍 Zermatt, Valais, Switzerland 🇨🇭</p>
+          </div>
+
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Matterhorn+Zermatt+Switzerland&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Matterhorn Alpine Zermatt Map">
+            </iframe>
+          </div>
+
+          <div class="vlog-meta-info">
+            <div class="meta-item"><strong>Highlight:</strong> Glacier Express &amp; Winter Skiing</div>
+            <div class="meta-item"><strong>Best Season:</strong> December – April / July – August</div>
+          </div>
+
+          <div class="vlog-features">
+            <ul class="properties-list">
+              <li>&lt;iframe&gt;</li>
+              <li>loading="lazy"</li>
+              <li>alpine topography</li>
+              <li>height="260"</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="code-box-header">
+            <span class="code-lang">HTML &lt;iframe&gt;</span>
+            <button class="copy-btn" title="Copy code">Copy</button>
+          </div>
+          <pre><code>&lt;<span class="html-tag">iframe</span>
+  <span class="html-attr">src</span>=<span class="html-val">"https://maps.google.com/maps?q=Matterhorn+Zermatt+Switzerland&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"</span>
+  <span class="html-attr">width</span>=<span class="html-val">"100%"</span>
+  <span class="html-attr">height</span>=<span class="html-val">"260"</span>
+  <span class="html-attr">style</span>=<span class="html-val">"border: 0;"</span>
+  <span class="html-attr">allowfullscreen</span>=<span class="html-val">""</span>
+  <span class="html-attr">loading</span>=<span class="html-val">"lazy"</span>
+  <span class="html-attr">referrerpolicy</span>=<span class="html-val">"no-referrer-when-downgrade"</span>
+  <span class="html-attr">title</span>=<span class="html-val">"Matterhorn Alpine Zermatt Map"</span>&gt;
+&lt;/<span class="html-tag">iframe</span>&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- =====================================
+           VLOG 5: AGRA, INDIA (TAJ MAHAL)
+      ====================================== -->
+      <div class="vlog-card-layout" data-region="asia">
+        <div class="vlog-card">
+          <div class="vlog-header-info">
+            <div class="card-title-row">
+              <h3>5. The Taj Mahal &amp; Yamuna Heritage</h3>
+              <span class="region-badge">Asia</span>
+            </div>
+            <p class="location-subtitle">📍 Agra, Uttar Pradesh, India 🇮🇳</p>
+          </div>
+
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Taj+Mahal+Agra+India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Taj Mahal Agra Location Map">
+            </iframe>
+          </div>
+
+          <div class="vlog-meta-info">
+            <div class="meta-item"><strong>Highlight:</strong> Mughal Marble Architecture &amp; Sunrise Reflection</div>
+            <div class="meta-item"><strong>Best Season:</strong> October – March</div>
+          </div>
+
+          <div class="vlog-features">
+            <ul class="properties-list">
+              <li>&lt;iframe&gt;</li>
+              <li>loading="lazy"</li>
+              <li>UNESCO World Heritage</li>
+              <li>allowfullscreen</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="code-box-header">
+            <span class="code-lang">HTML &lt;iframe&gt;</span>
+            <button class="copy-btn" title="Copy code">Copy</button>
+          </div>
+          <pre><code>&lt;<span class="html-tag">iframe</span>
+  <span class="html-attr">src</span>=<span class="html-val">"https://maps.google.com/maps?q=Taj+Mahal+Agra+India&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"</span>
+  <span class="html-attr">width</span>=<span class="html-val">"100%"</span>
+  <span class="html-attr">height</span>=<span class="html-val">"260"</span>
+  <span class="html-attr">style</span>=<span class="html-val">"border: 0;"</span>
+  <span class="html-attr">allowfullscreen</span>=<span class="html-val">""</span>
+  <span class="html-attr">loading</span>=<span class="html-val">"lazy"</span>
+  <span class="html-attr">referrerpolicy</span>=<span class="html-val">"no-referrer-when-downgrade"</span>
+  <span class="html-attr">title</span>=<span class="html-val">"Taj Mahal Agra Location Map"</span>&gt;
+&lt;/<span class="html-tag">iframe</span>&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- =====================================
+           VLOG 6: BALI, INDONESIA (UBUD)
+      ====================================== -->
+      <div class="vlog-card-layout" data-region="asia">
+        <div class="vlog-card">
+          <div class="vlog-header-info">
+            <div class="card-title-row">
+              <h3>6. Ubud Rainforest &amp; Rice Terraces</h3>
+              <span class="region-badge">Asia</span>
+            </div>
+            <p class="location-subtitle">📍 Ubud, Gianyar Regency, Bali, Indonesia 🇮🇩</p>
+          </div>
+
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Ubud+Bali+Indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Bali Ubud Rainforest Map">
+            </iframe>
+          </div>
+
+          <div class="vlog-meta-info">
+            <div class="meta-item"><strong>Highlight:</strong> Tegallalang Terraces &amp; Monkey Forest</div>
+            <div class="meta-item"><strong>Best Season:</strong> April – October</div>
+          </div>
+
+          <div class="vlog-features">
+            <ul class="properties-list">
+              <li>&lt;iframe&gt;</li>
+              <li>loading="lazy"</li>
+              <li>tropical rainforest</li>
+              <li>responsive embed</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="code-box-header">
+            <span class="code-lang">HTML &lt;iframe&gt;</span>
+            <button class="copy-btn" title="Copy code">Copy</button>
+          </div>
+          <pre><code>&lt;<span class="html-tag">iframe</span>
+  <span class="html-attr">src</span>=<span class="html-val">"https://maps.google.com/maps?q=Ubud+Bali+Indonesia&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"</span>
+  <span class="html-attr">width</span>=<span class="html-val">"100%"</span>
+  <span class="html-attr">height</span>=<span class="html-val">"260"</span>
+  <span class="html-attr">style</span>=<span class="html-val">"border: 0;"</span>
+  <span class="html-attr">allowfullscreen</span>=<span class="html-val">""</span>
+  <span class="html-attr">loading</span>=<span class="html-val">"lazy"</span>
+  <span class="html-attr">referrerpolicy</span>=<span class="html-val">"no-referrer-when-downgrade"</span>
+  <span class="html-attr">title</span>=<span class="html-val">"Bali Ubud Rainforest Map"</span>&gt;
+&lt;/<span class="html-tag">iframe</span>&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- =====================================
+           VLOG 7: NEW YORK CITY, USA
+      ====================================== -->
+      <div class="vlog-card-layout" data-region="americas">
+        <div class="vlog-card">
+          <div class="vlog-header-info">
+            <div class="card-title-row">
+              <h3>7. Times Square &amp; Broadway Avenue</h3>
+              <span class="region-badge">Americas</span>
+            </div>
+            <p class="location-subtitle">📍 Manhattan, New York City, USA 🇺🇸</p>
+          </div>
+
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Times+Square+New+York+USA&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="New York Times Square Map">
+            </iframe>
+          </div>
+
+          <div class="vlog-meta-info">
+            <div class="meta-item"><strong>Highlight:</strong> Broadway Theaters &amp; Midnight Billboards</div>
+            <div class="meta-item"><strong>Best Season:</strong> September – December</div>
+          </div>
+
+          <div class="vlog-features">
+            <ul class="properties-list">
+              <li>&lt;iframe&gt;</li>
+              <li>loading="lazy"</li>
+              <li>allowfullscreen</li>
+              <li>urban street grid</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="code-box-header">
+            <span class="code-lang">HTML &lt;iframe&gt;</span>
+            <button class="copy-btn" title="Copy code">Copy</button>
+          </div>
+          <pre><code>&lt;<span class="html-tag">iframe</span>
+  <span class="html-attr">src</span>=<span class="html-val">"https://maps.google.com/maps?q=Times+Square+New+York+USA&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"</span>
+  <span class="html-attr">width</span>=<span class="html-val">"100%"</span>
+  <span class="html-attr">height</span>=<span class="html-val">"260"</span>
+  <span class="html-attr">style</span>=<span class="html-val">"border: 0;"</span>
+  <span class="html-attr">allowfullscreen</span>=<span class="html-val">""</span>
+  <span class="html-attr">loading</span>=<span class="html-val">"lazy"</span>
+  <span class="html-attr">referrerpolicy</span>=<span class="html-val">"no-referrer-when-downgrade"</span>
+  <span class="html-attr">title</span>=<span class="html-val">"New York Times Square Map"</span>&gt;
+&lt;/<span class="html-tag">iframe</span>&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- =====================================
+           VLOG 8: DUBAI, UAE (BURJ KHALIFA)
+      ====================================== -->
+      <div class="vlog-card-layout" data-region="middle-east-africa">
+        <div class="vlog-card">
+          <div class="vlog-header-info">
+            <div class="card-title-row">
+              <h3>8. Burj Khalifa &amp; Downtown Dubai</h3>
+              <span class="region-badge">Middle East</span>
+            </div>
+            <p class="location-subtitle">📍 Downtown Dubai, United Arab Emirates 🇦🇪</p>
+          </div>
+
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Burj+Khalifa+Dubai+UAE&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Burj Khalifa Dubai Location Map">
+            </iframe>
+          </div>
+
+          <div class="vlog-meta-info">
+            <div class="meta-item"><strong>Highlight:</strong> World's Tallest Tower &amp; Dubai Fountain</div>
+            <div class="meta-item"><strong>Best Season:</strong> November – March</div>
+          </div>
+
+          <div class="vlog-features">
+            <ul class="properties-list">
+              <li>&lt;iframe&gt;</li>
+              <li>loading="lazy"</li>
+              <li>skyscrapers</li>
+              <li>allowfullscreen</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="code-box-header">
+            <span class="code-lang">HTML &lt;iframe&gt;</span>
+            <button class="copy-btn" title="Copy code">Copy</button>
+          </div>
+          <pre><code>&lt;<span class="html-tag">iframe</span>
+  <span class="html-attr">src</span>=<span class="html-val">"https://maps.google.com/maps?q=Burj+Khalifa+Dubai+UAE&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"</span>
+  <span class="html-attr">width</span>=<span class="html-val">"100%"</span>
+  <span class="html-attr">height</span>=<span class="html-val">"260"</span>
+  <span class="html-attr">style</span>=<span class="html-val">"border: 0;"</span>
+  <span class="html-attr">allowfullscreen</span>=<span class="html-val">""</span>
+  <span class="html-attr">loading</span>=<span class="html-val">"lazy"</span>
+  <span class="html-attr">referrerpolicy</span>=<span class="html-val">"no-referrer-when-downgrade"</span>
+  <span class="html-attr">title</span>=<span class="html-val">"Burj Khalifa Dubai Location Map"</span>&gt;
+&lt;/<span class="html-tag">iframe</span>&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- =====================================
+           VLOG 9: ROME, ITALY (COLOSSEUM)
+      ====================================== -->
+      <div class="vlog-card-layout" data-region="europe">
+        <div class="vlog-card">
+          <div class="vlog-header-info">
+            <div class="card-title-row">
+              <h3>9. The Colosseum &amp; Roman Forum</h3>
+              <span class="region-badge">Europe</span>
+            </div>
+            <p class="location-subtitle">📍 Piazza del Colosseo, Rome, Italy 🇮🇹</p>
+          </div>
+
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Colosseum+Rome+Italy&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Colosseum Rome Historical Map">
+            </iframe>
+          </div>
+
+          <div class="vlog-meta-info">
+            <div class="meta-item"><strong>Highlight:</strong> Gladiatorial Arena &amp; Ancient Roman Architecture</div>
+            <div class="meta-item"><strong>Best Season:</strong> April – June / September – October</div>
+          </div>
+
+          <div class="vlog-features">
+            <ul class="properties-list">
+              <li>&lt;iframe&gt;</li>
+              <li>loading="lazy"</li>
+              <li>ancient ruins</li>
+              <li>allowfullscreen</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="code-box-header">
+            <span class="code-lang">HTML &lt;iframe&gt;</span>
+            <button class="copy-btn" title="Copy code">Copy</button>
+          </div>
+          <pre><code>&lt;<span class="html-tag">iframe</span>
+  <span class="html-attr">src</span>=<span class="html-val">"https://maps.google.com/maps?q=Colosseum+Rome+Italy&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"</span>
+  <span class="html-attr">width</span>=<span class="html-val">"100%"</span>
+  <span class="html-attr">height</span>=<span class="html-val">"260"</span>
+  <span class="html-attr">style</span>=<span class="html-val">"border: 0;"</span>
+  <span class="html-attr">allowfullscreen</span>=<span class="html-val">""</span>
+  <span class="html-attr">loading</span>=<span class="html-val">"lazy"</span>
+  <span class="html-attr">referrerpolicy</span>=<span class="html-val">"no-referrer-when-downgrade"</span>
+  <span class="html-attr">title</span>=<span class="html-val">"Colosseum Rome Historical Map"</span>&gt;
+&lt;/<span class="html-tag">iframe</span>&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- =====================================
+           VLOG 10: GIZA, EGYPT (PYRAMIDS)
+      ====================================== -->
+      <div class="vlog-card-layout" data-region="middle-east-africa">
+        <div class="vlog-card">
+          <div class="vlog-header-info">
+            <div class="card-title-row">
+              <h3>10. The Great Pyramids &amp; Sphinx</h3>
+              <span class="region-badge">Africa</span>
+            </div>
+            <p class="location-subtitle">📍 Giza Plateau, Cairo, Egypt 🇪🇬</p>
+          </div>
+
+          <div class="iframe-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Great+Pyramid+of+Giza+Egypt&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="260"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Great Pyramids of Giza Map">
+            </iframe>
+          </div>
+
+          <div class="vlog-meta-info">
+            <div class="meta-item"><strong>Highlight:</strong> Wonders of the Ancient World &amp; Camel Desert Trek</div>
+            <div class="meta-item"><strong>Best Season:</strong> October – April</div>
+          </div>
+
+          <div class="vlog-features">
+            <ul class="properties-list">
+              <li>&lt;iframe&gt;</li>
+              <li>loading="lazy"</li>
+              <li>ancient wonder</li>
+              <li>satellite overview</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="code-box">
+          <div class="code-box-header">
+            <span class="code-lang">HTML &lt;iframe&gt;</span>
+            <button class="copy-btn" title="Copy code">Copy</button>
+          </div>
+          <pre><code>&lt;<span class="html-tag">iframe</span>
+  <span class="html-attr">src</span>=<span class="html-val">"https://maps.google.com/maps?q=Great+Pyramid+of+Giza+Egypt&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"</span>
+  <span class="html-attr">width</span>=<span class="html-val">"100%"</span>
+  <span class="html-attr">height</span>=<span class="html-val">"260"</span>
+  <span class="html-attr">style</span>=<span class="html-val">"border: 0;"</span>
+  <span class="html-attr">allowfullscreen</span>=<span class="html-val">""</span>
+  <span class="html-attr">loading</span>=<span class="html-val">"lazy"</span>
+  <span class="html-attr">referrerpolicy</span>=<span class="html-val">"no-referrer-when-downgrade"</span>
+  <span class="html-attr">title</span>=<span class="html-val">"Great Pyramids of Giza Map"</span>&gt;
+&lt;/<span class="html-tag">iframe</span>&gt;</code></pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================================================
+       FOOTER
+  =================================================== -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p><strong>Traveler Vlog &amp; Location Project</strong> • Built for Tap Academy Frontend Mastery</p>
+      <div class="footer-links">
+        <a href="../Media/index.html">Media Player</a>
+        <a href="../Lists/index.html">List Project</a>
+        <a href="../Tables/index.html">Table Project</a>
+        <a href="https://tunkarapalliraghavendraportfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
+        <a href="#nav">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       CLIENT-SIDE JAVASCRIPT
+  =================================================== -->
+  <script>
+    // 1. Copy to Clipboard Functionality
+    document.querySelectorAll('.copy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const codeBox = button.closest('.code-box');
+        const codeElement = codeBox.querySelector('pre code');
+        const textToCopy = codeElement.innerText;
+
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          const originalText = button.textContent;
+          button.textContent = 'Copied! ✓';
+          button.classList.add('copied');
+          setTimeout(() => {
+            button.textContent = originalText;
+            button.classList.remove('copied');
+          }, 2000);
+        }).catch(err => {
+          console.error('Failed to copy code: ', err);
+        });
+      });
+    });
+
+    // 2. Real-Time Search Functionality
+    const searchInput = document.getElementById('searchInput');
+    const vlogCards = document.querySelectorAll('.vlog-card-layout');
+    const container = document.querySelector('.vlog-grid');
+
+    searchInput.addEventListener('input', function () {
+      const query = this.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      vlogCards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (query === '' || text.includes(query)) {
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      let emptyNotice = document.querySelector('.no-results');
+      if (visibleCount === 0) {
+        if (!emptyNotice) {
+          emptyNotice = document.createElement('p');
+          emptyNotice.className = 'no-results';
+          emptyNotice.textContent = 'No matching destinations or iFrames found.';
+          container.appendChild(emptyNotice);
+        }
+        emptyNotice.style.display = 'block';
+      } else if (emptyNotice) {
+        emptyNotice.style.display = 'none';
+      }
+    });
+
+    // 3. Continent / Region Filter Buttons
+    const filterButtons = document.querySelectorAll('.filter-btn');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        vlogCards.forEach(card => {
+          const region = card.getAttribute('data-region');
+          if (filter === 'all' || region === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

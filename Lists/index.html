@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Lists Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+  <nav id="nav">
+    <h2>HTML Lists Project</h2>
+    <ul class="project-nav" aria-label="Projects">
+      <li><a href="../Media/index.html">Media Player</a></li>
+      <li><a href="./index.html" aria-current="page">List Project</a></li>
+      <li><a href="../Tables/index.html">Table Project</a></li>
+      <li><a href="../Traveler_Vlog/index.html">Traveler Vlog</a></li>
+      <li><a href="https://tunkarapalliraghavendraportfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a></li>
+    </ul>
+    <input type="search" id="searchInput" placeholder="Search list types, tags, or properties..." />
+  </nav>
+
+  <!-- =========================
+         MAIN CONTAINER
+    ========================== -->
+
+  <div class="container">
+
+    <!-- =========================
+         SECTION 1: UNORDERED LISTS
+    ========================== -->
+    <section class="list-section">
+      <h2>Unordered Lists (&lt;ul&gt;)</h2>
+
+      <div class="list-grid">
+
+        <!-- 1.1 Default Disc -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>1. Default Disc Marker</h3>
+            <div class="list-preview-container">
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ul&gt;</li>
+                <li>type="disc"</li>
+                <li>default marker</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ul</span> <span class="html-attr">type</span>=<span class="html-val">"disc"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;HTML5&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;CSS3&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;JavaScript&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ul</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 1.2 Circle Marker -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>2. Circle Marker</h3>
+            <div class="list-preview-container">
+              <ul type="circle">
+                <li>React</li>
+                <li>Angular</li>
+                <li>Vue.js</li>
+              </ul>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ul&gt;</li>
+                <li>type="circle"</li>
+                <li>hollow circle</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ul</span> <span class="html-attr">type</span>=<span class="html-val">"circle"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;React&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Angular&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Vue.js&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ul</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 1.3 Square Marker -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>3. Square Marker</h3>
+            <div class="list-preview-container">
+              <ul type="square">
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ul&gt;</li>
+                <li>type="square"</li>
+                <li>solid square</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ul</span> <span class="html-attr">type</span>=<span class="html-val">"square"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Node.js&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Express.js&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;MongoDB&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ul</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 1.4 None Marker -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>4. None (No Bullets)</h3>
+            <div class="list-preview-container">
+              <ul style="list-style-type: none; padding-left: 0;">
+                <li>Frontend Architecture</li>
+                <li>Backend Engineering</li>
+                <li>DevOps & CI/CD</li>
+              </ul>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ul&gt;</li>
+                <li>list-style-type: none</li>
+                <li>no bullets</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ul</span> <span class="html-attr">style</span>=<span class="html-val">"list-style-type: none;"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Frontend Architecture&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Backend Engineering&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;DevOps & CI/CD&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ul</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 1.5 Custom Emoji Bullets -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>5. Custom Emoji Bullet List</h3>
+            <div class="list-preview-container">
+              <ul class="emoji-list">
+                <li>High Performance Execution</li>
+                <li>Fully Responsive Layout</li>
+                <li>Clean Semantic Markup</li>
+              </ul>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ul&gt;</li>
+                <li>custom icon</li>
+                <li>css ::before</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ul</span> <span class="html-attr">class</span>=<span class="html-val">"emoji-list"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;High Performance Execution&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Fully Responsive Layout&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Clean Semantic Markup&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ul</span>&gt;</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         SECTION 2: ORDERED LISTS
+    ========================== -->
+    <section class="list-section">
+      <h2>Ordered Lists (&lt;ol&gt;)</h2>
+
+      <div class="list-grid">
+
+        <!-- 2.1 Default Decimal Numbers -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>1. Decimal Numbers (Default)</h3>
+            <div class="list-preview-container">
+              <ol type="1">
+                <li>Requirements Analysis</li>
+                <li>System Architecture Design</li>
+                <li>Feature Implementation</li>
+                <li>Quality Assurance & Testing</li>
+              </ol>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ol&gt;</li>
+                <li>type="1"</li>
+                <li>1, 2, 3...</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ol</span> <span class="html-attr">type</span>=<span class="html-val">"1"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Requirements Analysis&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;System Architecture Design&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Feature Implementation&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Quality Assurance & Testing&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ol</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 2.2 Uppercase Letters -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>2. Uppercase Letters</h3>
+            <div class="list-preview-container">
+              <ol type="A">
+                <li>Initiation Phase</li>
+                <li>Planning Phase</li>
+                <li>Execution Phase</li>
+                <li>Closure Phase</li>
+              </ol>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ol&gt;</li>
+                <li>type="A"</li>
+                <li>A, B, C...</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ol</span> <span class="html-attr">type</span>=<span class="html-val">"A"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Initiation Phase&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Planning Phase&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Execution Phase&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Closure Phase&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ol</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 2.3 Lowercase Letters -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>3. Lowercase Letters</h3>
+            <div class="list-preview-container">
+              <ol type="a">
+                <li>Variables and Constants</li>
+                <li>Conditional Statements</li>
+                <li>Loops and Iterations</li>
+                <li>Functions and Scope</li>
+              </ol>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ol&gt;</li>
+                <li>type="a"</li>
+                <li>a, b, c...</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ol</span> <span class="html-attr">type</span>=<span class="html-val">"a"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Variables and Constants&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Conditional Statements&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Loops and Iterations&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Functions and Scope&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ol</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 2.4 Uppercase Roman Numerals -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>4. Uppercase Roman Numerals</h3>
+            <div class="list-preview-container">
+              <ol type="I">
+                <li>Chapter I: Foundations</li>
+                <li>Chapter II: Data Structures</li>
+                <li>Chapter III: Algorithms</li>
+              </ol>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ol&gt;</li>
+                <li>type="I"</li>
+                <li>I, II, III...</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ol</span> <span class="html-attr">type</span>=<span class="html-val">"I"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Chapter I: Foundations&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Chapter II: Data Structures&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Chapter III: Algorithms&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ol</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 2.5 Lowercase Roman Numerals -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>5. Lowercase Roman Numerals</h3>
+            <div class="list-preview-container">
+              <ol type="i">
+                <li>preface and overview</li>
+                <li>acknowledgements</li>
+                <li>table of contents</li>
+              </ol>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ol&gt;</li>
+                <li>type="i"</li>
+                <li>i, ii, iii...</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ol</span> <span class="html-attr">type</span>=<span class="html-val">"i"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;preface and overview&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;acknowledgements&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;table of contents&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ol</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 2.6 Custom Start Value -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>6. Custom Start Value (start="5")</h3>
+            <div class="list-preview-container">
+              <ol type="1" start="5">
+                <li>Step Five (continued)</li>
+                <li>Step Six</li>
+                <li>Step Seven</li>
+              </ol>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ol&gt;</li>
+                <li>start="5"</li>
+                <li>starts at 5</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ol</span> <span class="html-attr">type</span>=<span class="html-val">"1"</span> <span class="html-attr">start</span>=<span class="html-val">"5"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Step Five (continued)&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Step Six&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Step Seven&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ol</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 2.7 Reversed Ordered List -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>7. Reversed Order (Countdown)</h3>
+            <div class="list-preview-container">
+              <ol reversed>
+                <li>Launch Rocket!</li>
+                <li>Ignition Sequence</li>
+                <li>Engine Check</li>
+                <li>Final Countdown</li>
+              </ol>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ol&gt;</li>
+                <li>reversed</li>
+                <li>countdown order</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ol</span> <span class="html-attr">reversed</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Launch Rocket!&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Ignition Sequence&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Engine Check&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Final Countdown&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ol</span>&gt;</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         SECTION 3: DESCRIPTION LISTS
+    ========================== -->
+    <section class="list-section">
+      <h2>Description / Definition Lists (&lt;dl&gt;)</h2>
+
+      <div class="list-grid">
+
+        <!-- 3.1 Description List -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>1. Standard Terms & Descriptions</h3>
+            <div class="list-preview-container">
+              <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language for document structuring.</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets for visual presentation and layout.</dd>
+                <dt>JavaScript</dt>
+                <dd>Dynamic programming language for client-side interactivity.</dd>
+              </dl>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;dl&gt;</li>
+                <li>&lt;dt&gt; term</li>
+                <li>&lt;dd&gt; description</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">dl</span>&gt;
+  &lt;<span class="html-tag">dt</span>&gt;HTML&lt;/<span class="html-tag">dt</span>&gt;
+  &lt;<span class="html-tag">dd</span>&gt;HyperText Markup Language for document structuring.&lt;/<span class="html-tag">dd</span>&gt;
+
+  &lt;<span class="html-tag">dt</span>&gt;CSS&lt;/<span class="html-tag">dt</span>&gt;
+  &lt;<span class="html-tag">dd</span>&gt;Cascading Style Sheets for visual presentation and layout.&lt;/<span class="html-tag">dd</span>&gt;
+
+  &lt;<span class="html-tag">dt</span>&gt;JavaScript&lt;/<span class="html-tag">dt</span>&gt;
+  &lt;<span class="html-tag">dd</span>&gt;Dynamic programming language for client-side interactivity.&lt;/<span class="html-tag">dd</span>&gt;
+&lt;/<span class="html-tag">dl</span>&gt;</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         SECTION 4: NESTED & ADVANCED LISTS
+    ========================== -->
+    <section class="list-section">
+      <h2>Nested & Advanced Lists</h2>
+
+      <div class="list-grid">
+
+        <!-- 4.1 Nested List -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>1. Multi-Level Nested List</h3>
+            <div class="list-preview-container">
+              <ul>
+                <li>Frontend Technologies
+                  <ul>
+                    <li>HTML5 Semantic Tags</li>
+                    <li>CSS3 Flexbox & Grid</li>
+                    <li>JavaScript ES6+</li>
+                  </ul>
+                </li>
+                <li>Backend Technologies
+                  <ul>
+                    <li>Node.js / Express</li>
+                    <li>Python / Django</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>nested &lt;ul&gt;</li>
+                <li>hierarchy</li>
+                <li>multi-level</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ul</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Frontend Technologies
+    &lt;<span class="html-tag">ul</span>&gt;
+      &lt;<span class="html-tag">li</span>&gt;HTML5 Semantic Tags&lt;/<span class="html-tag">li</span>&gt;
+      &lt;<span class="html-tag">li</span>&gt;CSS3 Flexbox & Grid&lt;/<span class="html-tag">li</span>&gt;
+      &lt;<span class="html-tag">li</span>&gt;JavaScript ES6+&lt;/<span class="html-tag">li</span>&gt;
+    &lt;/<span class="html-tag">ul</span>&gt;
+  &lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;Backend Technologies
+    &lt;<span class="html-tag">ul</span>&gt;
+      &lt;<span class="html-tag">li</span>&gt;Node.js / Express&lt;/<span class="html-tag">li</span>&gt;
+      &lt;<span class="html-tag">li</span>&gt;Python / Django&lt;/<span class="html-tag">li</span>&gt;
+    &lt;/<span class="html-tag">ul</span>&gt;
+  &lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ul</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 4.2 Horizontal Menu List -->
+        <div class="list-card-layout">
+          <div class="list-card">
+            <h3>2. Horizontal Navigation List</h3>
+            <div class="list-preview-container">
+              <ul class="horizontal-list">
+                <li>🏠 Home</li>
+                <li>📖 Tutorials</li>
+                <li>💼 Projects</li>
+                <li>✉️ Contact</li>
+              </ul>
+            </div>
+            <div class="list-features">
+              <ul class="properties-list">
+                <li>&lt;ul&gt;</li>
+                <li>display: flex</li>
+                <li>horizontal menu</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">ul</span> <span class="html-attr">class</span>=<span class="html-val">"horizontal-list"</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;🏠 Home&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;📖 Tutorials&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;💼 Projects&lt;/<span class="html-tag">li</span>&gt;
+  &lt;<span class="html-tag">li</span>&gt;✉️ Contact&lt;/<span class="html-tag">li</span>&gt;
+&lt;/<span class="html-tag">ul</span>&gt;</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- =========================
+         REAL-TIME SEARCH SCRIPT
+    ========================== -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const listLayouts = document.querySelectorAll('.list-card-layout');
+    const listSections = document.querySelectorAll('.list-section');
+
+    searchInput.addEventListener('input', function () {
+      const query = this.value.trim().toLowerCase();
+
+      listLayouts.forEach(layout => {
+        const text = layout.innerText.toLowerCase();
+        if (query === '' || text.includes(query)) {
+          layout.style.display = '';
+        } else {
+          layout.style.display = 'none';
+        }
+      });
+
+      listSections.forEach(section => {
+        const visibleItems = section.querySelectorAll(
+          '.list-card-layout:not([style*="display: none"])'
+        );
+        let emptyNotice = section.querySelector('.no-results');
+
+        if (visibleItems.length === 0) {
+          if (!emptyNotice) {
+            emptyNotice = document.createElement('p');
+            emptyNotice.className = 'no-results';
+            emptyNotice.style.color = '#64748b';
+            emptyNotice.style.fontStyle = 'italic';
+            emptyNotice.style.padding = '12px 16px';
+            emptyNotice.style.background = '#e2e8f0';
+            emptyNotice.style.borderRadius = '8px';
+            emptyNotice.style.marginTop = '10px';
+            emptyNotice.textContent = 'No matching lists found in this section.';
+            section.appendChild(emptyNotice);
+          }
+          emptyNotice.style.display = 'block';
+        } else if (emptyNotice) {
+          emptyNotice.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

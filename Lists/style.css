@@ -1,0 +1,564 @@
+/* ===================================================
+   DIGNIFIED & MODERN COLOR SYSTEM
+=================================================== */
+
+:root {
+    --bg-main: #f8fafc;            /* Clean Slate Background */
+    --bg-layout: #eef2f6;          /* Dignified Cool Slate Surface */
+    --card-bg: #ffffff;            /* Pure White Card */
+    --card-border: #e2e8f0;        /* Card Border */
+    --text-primary: #0f172a;       /* Deep Slate Text */
+    --text-secondary: #475569;     /* Muted Slate Text */
+    --accent-primary: #2563eb;     /* Sapphire Blue Accent */
+    --accent-gradient: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    --tag-bg: #f1f5f9;             /* Badge Background */
+    --tag-border: #cbd5e1;         /* Badge Border */
+    --tag-text: #1e293b;           /* Badge Text */
+    --code-tag: #9333ea;           /* Royal Purple Tag */
+    --code-attr: #0284c7;          /* Sapphire Blue Attribute */
+    --code-val: #059669;           /* Forest Emerald Value */
+    --code-text: #0f172a;          /* Crisp Code Text */
+    --shadow-soft: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", Helvetica, Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+
+/* ===================================================
+   NAVIGATION
+=================================================== */
+
+#nav {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 5%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--card-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+#nav h2 {
+    margin: 0;
+    flex: 0 0 auto;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.project-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto 0 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.project-nav a,
+.project-nav span {
+    color: var(--text-secondary);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.project-nav a:hover,
+.project-nav a[aria-current="page"] {
+    color: var(--accent-primary);
+}
+
+.project-nav span {
+    color: #94a3b8;
+}
+
+#nav input {
+    width: 360px;
+    max-width: 100%;
+    flex: 0 1 360px;
+    padding: 11px 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 30px;
+    outline: none;
+    font-size: 14px;
+    color: var(--text-primary);
+    background-color: #f8fafc;
+    transition: all 0.25s ease;
+}
+
+#nav input:focus {
+    border-color: var(--accent-primary);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ===================================================
+   MAIN CONTAINER
+=================================================== */
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 36px auto;
+    padding-bottom: 50px;
+}
+
+
+/* ===================================================
+   SECTION HEADINGS
+=================================================== */
+
+.list-section {
+    margin-bottom: 55px;
+}
+
+.list-section > h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-section > h2::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 24px;
+    background: var(--accent-gradient);
+    border-radius: 3px;
+}
+
+.list-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+/* ===================================================
+   CARD LAYOUT (SIDE BY SIDE ON DIGNIFIED SURFACE)
+=================================================== */
+
+.list-card-layout {
+    width: 100%;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    border: 1px solid #cbd5e1;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-card-layout:hover {
+    box-shadow: 0 8px 30px -4px rgba(15, 23, 42, 0.08);
+}
+
+/* List Card (Left Side) */
+.list-card {
+    width: 48%;
+    flex: 0 0 48%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    display: flex;
+    flex-direction: column;
+}
+
+.list-card h3 {
+    margin: 0 0 14px 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Rendered Lists Styling */
+.list-preview-container {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px 22px;
+    min-height: 110px;
+}
+
+.list-preview-container ul,
+.list-preview-container ol {
+    margin: 0;
+    padding-left: 24px;
+    color: #1e293b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.list-preview-container li {
+    margin-bottom: 4px;
+}
+
+/* Description List (<dl>) */
+.list-preview-container dl {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.list-preview-container dt {
+    font-weight: 700;
+    color: #1e293b;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.list-preview-container dt:first-child {
+    margin-top: 0;
+}
+
+.list-preview-container dd {
+    margin: 2px 0 6px 18px;
+    color: #475569;
+    font-size: 14px;
+}
+
+/* Horizontal Nav List */
+.horizontal-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.horizontal-list li {
+    background: #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0 !important;
+}
+
+/* Custom Emoji Bullet List */
+.emoji-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+.emoji-list li {
+    position: relative;
+    padding-left: 26px;
+}
+
+.emoji-list li::before {
+    content: "👉";
+    position: absolute;
+    left: 0;
+}
+
+
+/* ===================================================
+   PROPERTIES LIST (TAGS / BADGES)
+=================================================== */
+
+.list-features {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.properties-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.properties-list li {
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-weight: 600;
+    font-size: 12.5px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--tag-border);
+    transition: background 0.15s ease;
+}
+
+.properties-list li:hover {
+    background-color: #e2e8f0;
+}
+
+
+/* ===================================================
+   CODE SECTION (On Dignified Surface)
+=================================================== */
+
+.code-box {
+    flex: 1;
+    min-width: 0;
+    padding: 18px 22px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(203, 213, 225, 0.7);
+    border-radius: 12px;
+    overflow: hidden;
+    max-height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.code-box pre {
+    margin: 0;
+    font-family: 'Consolas', 'Fira Code', 'Courier New', monospace;
+    font-size: 14.5px;
+    line-height: 1.75;
+    color: var(--code-text);
+    overflow-x: auto;
+    overflow-y: auto;
+    flex: 1;
+    white-space: pre;
+    font-weight: 600;
+    scrollbar-width: thin;
+    scrollbar-color: #94a3b8 #f1f5f9;
+}
+
+/* Custom Visible Scrollbar at the Right */
+.code-box pre::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.code-box pre::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+.code-box pre::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 4px;
+    border: 2px solid #f1f5f9;
+}
+
+.code-box pre::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Syntax Highlighting */
+.html-tag {
+    color: var(--code-tag);
+    font-weight: 700;
+}
+
+.html-attr {
+    color: var(--code-attr);
+    font-weight: 600;
+}
+
+.html-val {
+    color: var(--code-val);
+    font-weight: 600;
+}
+
+
+/* ===================================================
+   RESPONSIVE BREAKPOINTS
+=================================================== */
+
+/* Tablets & Small Laptops (992px and below) */
+@media (max-width: 992px) {
+    #nav {
+        gap: 16px;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .project-nav {
+        gap: 10px;
+    }
+
+    .project-nav a,
+    .project-nav span {
+        font-size: 12px;
+    }
+
+    #nav input {
+        width: 260px;
+        flex-basis: 260px;
+    }
+
+    .list-card-layout {
+        gap: 20px;
+        padding: 18px;
+    }
+
+    .list-card {
+        width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .code-box pre {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
+
+/* Tablets Portrait & Mobiles (768px and below) */
+@media (max-width: 900px) {
+    #nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project-nav {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 2px;
+    }
+
+    #nav input {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav {
+        padding: 12px 18px;
+        min-height: 62px;
+    }
+
+    #nav h2 {
+        font-size: 19px;
+    }
+
+    .project-nav a,
+    .project-nav span {
+        font-size: 13px;
+    }
+
+    #nav input {
+        width: 190px;
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 22px auto;
+    }
+
+    .list-section > h2 {
+        font-size: 21px;
+        margin-bottom: 18px;
+    }
+
+    /* Stack card on top, code below */
+    .list-card-layout {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .list-card,
+    .code-box {
+        width: 100%;
+        flex: none;
+    }
+
+    .list-card {
+        padding: 16px;
+    }
+
+    .code-box {
+        padding: 14px 16px;
+    }
+
+    .code-box pre {
+        font-size: 13.5px;
+    }
+}
+
+/* Small Mobiles (480px and below) */
+@media (max-width: 480px) {
+    #nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+
+    #nav h2 {
+        font-size: 18px;
+    }
+
+    #nav input {
+        width: 100%;
+        flex: 1 0 100%;
+        margin-left: 0;
+        order: 2;
+    }
+
+    .project-nav {
+        order: 3;
+    }
+
+    .container {
+        width: 95%;
+        margin: 16px auto;
+    }
+
+    .list-card-layout {
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+    .list-card {
+        padding: 14px;
+    }
+
+    .list-card h3 {
+        font-size: 16px;
+    }
+
+    .properties-list li {
+        font-size: 12px;
+        padding: 4px 9px;
+    }
+
+    .code-box pre {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}

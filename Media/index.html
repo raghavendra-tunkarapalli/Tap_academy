@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+  <nav id="nav">
+    <h2>Media Project</h2>
+    <ul class="project-nav" aria-label="Projects">
+      <li><a href="./index.html" aria-current="page">Media Player</a></li>
+      <li><a href="../Lists/index.html">List Project</a></li>
+      <li><a href="../Tables/index.html">Table Project</a></li>
+      <li><a href="../Traveler_Vlog/index.html">Traveler Vlog</a></li>
+      <li><a href="https://tunkarapalliraghavendraportfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a></li>
+    </ul>
+    <input type="search" id="searchInput" placeholder="Search by name, property (e.g., autoplay, muted)..." />
+  </nav>
+
+  <!-- =========================
+         MAIN CONTAINER
+    ========================== -->
+
+  <div class="container">
+    <section class="media-section">
+      <h2>Videos</h2>
+
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-card-layout">
+          <div class="video-card">
+            <video controls>
+              <source src="./src/vid2.mp4" type="video/mp4" />
+            </video>
+
+            <h3>Jungle Book</h3>
+            <div class="video-features">
+              <ul class="properties-list">
+                <li>Default</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">video</span> <span class="html-attr">controls</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/vid2.mp4"</span> <span class="html-attr">type</span>=<span class="html-val">"video/mp4"</span> /&gt;
+&lt;/<span class="html-tag">video</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card-layout">
+          <div class="video-card">
+            <video autoplay muted>
+              <source src="./src/vid3.mp4" type="video/mp4" />
+            </video>
+
+            <h3>Jason Derulo</h3>
+            <div class="video-features">
+              <ul class="properties-list">
+                <li>autoplay</li>
+                <li>muted</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">video</span> <span class="html-attr">autoplay</span> <span class="html-attr">muted</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/vid3.mp4"</span> <span class="html-attr">type</span>=<span class="html-val">"video/mp4"</span> /&gt;
+&lt;/<span class="html-tag">video</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card-layout">
+          <div class="video-card">
+            <video controls autoplay loop muted>
+              <source src="./src/vid5.mp4" type="video/mp4" />
+            </video>
+
+            <h3>Godzilla</h3>
+            <div class="video-features">
+              <ul class="properties-list">
+                <li>controls</li>
+                <li>autoplay</li>
+                <li>loop</li>
+                <li>muted</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">video</span> <span class="html-attr">controls</span> <span class="html-attr">autoplay</span> <span class="html-attr">loop</span> <span class="html-attr">muted</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/vid5.mp4"</span> <span class="html-attr">type</span>=<span class="html-val">"video/mp4"</span> /&gt;
+&lt;/<span class="html-tag">video</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card-layout">
+          <div class="video-card">
+            <video controls poster="">
+              <source src="./src/vid6.mp4" type="video/mp4" />
+            </video>
+
+            <h3>Tamma Tamma</h3>
+            <div class="video-features">
+              <ul class="properties-list">
+                <li>controls</li>
+                <li>poster</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">video</span> <span class="html-attr">controls</span> <span class="html-attr">poster</span>=<span class="html-val">""</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/vid6.mp4"</span> <span class="html-attr">type</span>=<span class="html-val">"video/mp4"</span> /&gt;
+&lt;/<span class="html-tag">video</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card-layout">
+          <div class="video-card">
+            <video controls muted>
+              <source src="./src/vid7.mp4" type="video/mp4" />
+            </video>
+
+            <h3>Dhurandhar</h3>
+            <div class="video-features">
+              <ul class="properties-list">
+                <li>controls</li>
+                <li>muted</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">video</span> <span class="html-attr">controls</span> <span class="html-attr">muted</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/vid7.mp4"</span> <span class="html-attr">type</span>=<span class="html-val">"video/mp4"</span> /&gt;
+&lt;/<span class="html-tag">video</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="video-card-layout">
+          <div class="video-card">
+            <video autoplay muted controls loop>
+              <source src="./src/vid8.mp4" type="video/mp4" />
+            </video>
+
+            <h3>KGF</h3>
+            <div class="video-features">
+              <ul class="properties-list">
+                <li>controls</li>
+                <li>autoplay</li>
+                <li>muted</li>
+                <li>loop</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">video</span> <span class="html-attr">autoplay</span> <span class="html-attr">muted</span> <span class="html-attr">controls</span> <span class="html-attr">loop</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/vid8.mp4"</span> <span class="html-attr">type</span>=<span class="html-val">"video/mp4"</span> /&gt;
+&lt;/<span class="html-tag">video</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Video 7 (Reel 1) -->
+        <div class="video-card-layout">
+          <div class="video-card reel-card">
+            <video controls autoplay loop muted class="reel-video">
+              <source src="./src/vid1.mp4" type="video/mp4" />
+            </video>
+
+            <h3>Reel 1</h3>
+            <div class="video-features">
+              <ul class="properties-list">
+                <li>controls</li>
+                <li>autoplay</li>
+                <li>loop</li>
+                <li>muted</li>
+                <li>vertical video</li>
+                <li>size: 9:16</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">video</span> <span class="html-attr">controls</span> <span class="html-attr">autoplay</span> <span class="html-attr">loop</span> <span class="html-attr">muted</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/vid1.mp4"</span> <span class="html-attr">type</span>=<span class="html-val">"video/mp4"</span> /&gt;
+&lt;/<span class="html-tag">video</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Video 8 (Reel 2 - Wrong Path) -->
+        <div class="video-card-layout">
+          <div class="video-card reel-card">
+            <video controls autoplay loop muted class="reel-video">
+              <source src="./src/wrong_vid4.mp4" type="video/mp4" />
+              Your browser does not support the video tag or video file not found.
+            </video>
+
+            <h3>Reel 2</h3>
+            <div class="video-features">
+              <ul class="properties-list">
+                <li>controls</li>
+                <li>autoplay</li>
+                <li>loop</li>
+                <li>muted</li>
+                <li>vertical video</li>
+                <li>size: 9:16</li>
+                <li>wrong path</li>
+                <li>fallback text</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">video</span> <span class="html-attr">controls</span> <span class="html-attr">autoplay</span> <span class="html-attr">loop</span> <span class="html-attr">muted</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/wrong_vid4.mp4"</span> <span class="html-attr">type</span>=<span class="html-val">"video/mp4"</span> /&gt;
+  Your browser does not support the video tag or video file not found.
+&lt;/<span class="html-tag">video</span>&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+             AUDIOS
+        ========================== -->
+
+    <section class="media-section">
+      <h2>Audios</h2>
+
+      <div class="audio-grid">
+        <!-- Audio 1 -->
+        <div class="audio-card-layout">
+          <div class="audio-card">
+            <h3>Audio 1</h3>
+            <audio controls>
+              <source src="./src/audio1.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-features">
+              <ul class="properties-list">
+                <li>controls</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">audio</span> <span class="html-attr">controls</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/audio1.mp3"</span> <span class="html-attr">type</span>=<span class="html-val">"audio/mpeg"</span> /&gt;
+&lt;/<span class="html-tag">audio</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Audio 2 -->
+        <div class="audio-card-layout">
+          <div class="audio-card">
+            <h3>Audio 2</h3>
+            <audio controls>
+              <source src="./src/audio2.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-features">
+              <ul class="properties-list">
+                <li>controls</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">audio</span> <span class="html-attr">controls</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/audio2.mp3"</span> <span class="html-attr">type</span>=<span class="html-val">"audio/mpeg"</span> /&gt;
+&lt;/<span class="html-tag">audio</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Audio 3 -->
+        <div class="audio-card-layout">
+          <div class="audio-card">
+            <h3>Audio 3</h3>
+            <audio controls>
+              <source src="./src/audio3.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-features">
+              <ul class="properties-list">
+                <li>controls</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">audio</span> <span class="html-attr">controls</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/audio3.mp3"</span> <span class="html-attr">type</span>=<span class="html-val">"audio/mpeg"</span> /&gt;
+&lt;/<span class="html-tag">audio</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Audio 4 -->
+        <div class="audio-card-layout">
+          <div class="audio-card">
+            <h3>Audio 4</h3>
+            <audio controls>
+              <source src="./src/audio4.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-features">
+              <ul class="properties-list">
+                <li>controls</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">audio</span> <span class="html-attr">controls</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/audio4.mp3"</span> <span class="html-attr">type</span>=<span class="html-val">"audio/mpeg"</span> /&gt;
+&lt;/<span class="html-tag">audio</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Audio 5 -->
+        <div class="audio-card-layout">
+          <div class="audio-card">
+            <h3>Audio 5</h3>
+            <audio controls>
+              <source src="./src/audio5.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-features">
+              <ul class="properties-list">
+                <li>controls</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <pre><code>&lt;<span class="html-tag">audio</span> <span class="html-attr">controls</span>&gt;
+  &lt;<span class="html-tag">source</span> <span class="html-attr">src</span>=<span class="html-val">"./src/audio5.mp3"</span> <span class="html-attr">type</span>=<span class="html-val">"audio/mpeg"</span> /&gt;
+&lt;/<span class="html-tag">audio</span>&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const mediaLayouts = document.querySelectorAll('.video-card-layout, .audio-card-layout');
+    const mediaSections = document.querySelectorAll('.media-section');
+
+    searchInput.addEventListener('input', function () {
+      const query = this.value.trim().toLowerCase();
+
+      mediaLayouts.forEach(layout => {
+        const text = layout.innerText.toLowerCase();
+        if (query === '' || text.includes(query)) {
+          layout.style.display = '';
+        } else {
+          layout.style.display = 'none';
+        }
+      });
+
+      mediaSections.forEach(section => {
+        const visibleItems = section.querySelectorAll(
+          '.video-card-layout:not([style*="display: none"]), .audio-card-layout:not([style*="display: none"])'
+        );
+        let emptyNotice = section.querySelector('.no-results');
+
+        if (visibleItems.length === 0) {
+          if (!emptyNotice) {
+            emptyNotice = document.createElement('p');
+            emptyNotice.className = 'no-results';
+            emptyNotice.style.color = '#64748b';
+            emptyNotice.style.fontStyle = 'italic';
+            emptyNotice.style.padding = '12px 16px';
+            emptyNotice.style.background = '#e2e8f0';
+            emptyNotice.style.borderRadius = '8px';
+            emptyNotice.style.marginTop = '10px';
+            emptyNotice.textContent = 'No matching media found in this section.';
+            section.appendChild(emptyNotice);
+          }
+          emptyNotice.style.display = 'block';
+        } else if (emptyNotice) {
+          emptyNotice.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

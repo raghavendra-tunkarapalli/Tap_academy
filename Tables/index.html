@@ -1,0 +1,1538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Tables Project | Complete Guide & Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ===================================================
+       HEADER & NAVIGATION BAR
+  =================================================== -->
+  <nav id="nav">
+    <div class="nav-brand">
+      <h2>HTML Tables Showcase</h2>
+      <span class="brand-badge">HTML5 & CSS3</span>
+    </div>
+
+    <ul class="project-nav" aria-label="Projects">
+      <li><a href="../Media/index.html">Media Player</a></li>
+      <li><a href="../Lists/index.html">List Project</a></li>
+      <li><a href="./index.html" aria-current="page">Table Project</a></li>
+      <li><a href="../Traveler_Vlog/index.html">Traveler Vlog</a></li>
+      <li><a href="https://tunkarapalliraghavendraportfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a></li>
+    </ul>
+
+    <div class="search-wrapper">
+      <input type="search" id="searchInput" placeholder="Search tables, tags, properties (e.g. rowspan, colgroup, pricing)..." />
+    </div>
+  </nav>
+
+  <!-- ===================================================
+       FILTER PILLS / CATEGORY NAV
+  =================================================== -->
+  <div class="filter-bar">
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All Tables</button>
+      <button class="filter-btn" data-filter="basic">1. Basic Structure</button>
+      <button class="filter-btn" data-filter="semantic">2. Semantics (thead/tbody)</button>
+      <button class="filter-btn" data-filter="colgroup">3. Colgroup & Col</button>
+      <button class="filter-btn" data-filter="spanning">4. Colspan & Rowspan</button>
+      <button class="filter-btn" data-filter="realworld">5. Real-World Applications</button>
+      <button class="filter-btn" data-filter="styling">6. Advanced CSS Styling</button>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MAIN CONTENT CONTAINER
+  =================================================== -->
+  <div class="container">
+
+    <!-- ===================================================
+         SECTION 1: BASIC TABLE STRUCTURE
+    =================================================== -->
+    <section class="table-section" data-category="basic">
+      <div class="section-header">
+        <h2>1. Basic Table Structure</h2>
+        <p class="section-desc">Fundamental building blocks of HTML tables: <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>, and <code>&lt;caption&gt;</code>.</p>
+      </div>
+
+      <div class="table-grid">
+
+        <!-- 1.1 Simple 2D Data Table -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>1. Standard Data Table</h3>
+              <span class="badge">Core</span>
+            </div>
+            <p class="card-desc">Rows (<code>&lt;tr&gt;</code>), Header cells (<code>&lt;th&gt;</code>), and Data cells (<code>&lt;td&gt;</code>).</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table">
+                <tr>
+                  <th>ID</th>
+                  <th>Student Name</th>
+                  <th>Course</th>
+                  <th>Batch</th>
+                </tr>
+                <tr>
+                  <td>101</td>
+                  <td>Raghavendra</td>
+                  <td>Full Stack Java</td>
+                  <td>Morning</td>
+                </tr>
+                <tr>
+                  <td>102</td>
+                  <td>Priya Sharma</td>
+                  <td>Python Web Dev</td>
+                  <td>Evening</td>
+                </tr>
+                <tr>
+                  <td>103</td>
+                  <td>Karthik Verma</td>
+                  <td>UI/UX Architecture</td>
+                  <td>Weekend</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>&lt;table&gt;</li>
+                <li>&lt;tr&gt; row</li>
+                <li>&lt;th&gt; header</li>
+                <li>&lt;td&gt; data cell</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">table</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;ID&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Student Name&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Course&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Batch&lt;/<span class="html-tag">th</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;101&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Raghavendra&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Full Stack Java&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Morning&lt;/<span class="html-tag">td</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;102&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Priya Sharma&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Python Web Dev&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Evening&lt;/<span class="html-tag">td</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;103&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Karthik Verma&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;UI/UX Architecture&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Weekend&lt;/<span class="html-tag">td</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+&lt;/<span class="html-tag">table</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 1.2 Table with Caption -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>2. Table with Accessible Caption</h3>
+              <span class="badge">Accessibility</span>
+            </div>
+            <p class="card-desc"><code>&lt;caption&gt;</code> describes the table's purpose for screen readers and visual context.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table">
+                <caption class="styled-caption">🏢 Department Head Directory (2026 Q1)</caption>
+                <tr>
+                  <th>Department</th>
+                  <th>Lead Manager</th>
+                  <th>Location</th>
+                  <th>Members</th>
+                </tr>
+                <tr>
+                  <td>Engineering</td>
+                  <td>Sarah Jenkins</td>
+                  <td>Building A (Floor 3)</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>Product Design</td>
+                  <td>David Lee</td>
+                  <td>Building B (Floor 1)</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>Cloud Operations</td>
+                  <td>Anita Roy</td>
+                  <td>Building C (Floor 4)</td>
+                  <td>19</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>&lt;caption&gt;</li>
+                <li>caption-side: top</li>
+                <li>accessibility</li>
+                <li>screen readers</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">table</span>&gt;
+  &lt;<span class="html-tag">caption</span>&gt;🏢 Department Head Directory (2026 Q1)&lt;/<span class="html-tag">caption</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Department&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Lead Manager&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Location&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Members&lt;/<span class="html-tag">th</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Engineering&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Sarah Jenkins&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Building A (Floor 3)&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;28&lt;/<span class="html-tag">td</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+&lt;/<span class="html-tag">table</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 1.3 Border Spacing vs Collapse -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>3. Separated Cells with Border Spacing</h3>
+              <span class="badge">CSS Model</span>
+            </div>
+            <p class="card-desc">Using <code>border-collapse: separate;</code> and <code>border-spacing: 8px;</code> for card-like rounded cells.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table separated-cell-table">
+                <tr>
+                  <th>Asset</th>
+                  <th>Format</th>
+                  <th>Size</th>
+                  <th>Bitrate</th>
+                </tr>
+                <tr>
+                  <td>Hero Video</td>
+                  <td>MP4 (H.264)</td>
+                  <td>14.2 MB</td>
+                  <td>1080p 60fps</td>
+                </tr>
+                <tr>
+                  <td>Theme Track</td>
+                  <td>Audio (MP3)</td>
+                  <td>4.8 MB</td>
+                  <td>320 kbps</td>
+                </tr>
+                <tr>
+                  <td>Poster Banner</td>
+                  <td>WebP</td>
+                  <td>850 KB</td>
+                  <td>2400 x 1350</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>border-collapse: separate</li>
+                <li>border-spacing: 8px</li>
+                <li>border-radius: 6px</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML & CSS</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code><span class="comment">/* CSS */</span>
+<span class="html-tag">table</span> {
+  <span class="html-attr">border-collapse</span>: <span class="html-val">separate</span>;
+  <span class="html-attr">border-spacing</span>: <span class="html-val">8px 8px</span>;
+}
+<span class="html-tag">th</span>, <span class="html-tag">td</span> {
+  <span class="html-attr">background</span>: <span class="html-val">#f8fafc</span>;
+  <span class="html-attr">border</span>: <span class="html-val">1px solid #cbd5e1</span>;
+  <span class="html-attr">border-radius</span>: <span class="html-val">6px</span>;
+  <span class="html-attr">padding</span>: <span class="html-val">10px 14px</span>;
+}</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SECTION 2: SEMANTIC STRUCTURE
+    =================================================== -->
+    <section class="table-section" data-category="semantic">
+      <div class="section-header">
+        <h2>2. Semantic Structure (&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;)</h2>
+        <p class="section-desc">Dividing tabular data into semantic logical sections for enhanced accessibility, printing, and styling.</p>
+      </div>
+
+      <div class="table-grid">
+
+        <!-- 2.1 Commercial Invoice -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>1. Billing Invoice &amp; Tax Calculation</h3>
+              <span class="badge">Commercial</span>
+            </div>
+            <p class="card-desc">Full semantic division with header columns, repeated record rows, and calculated summary footer.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table">
+                <thead>
+                  <tr class="accent-head-table">
+                    <th>Item Description</th>
+                    <th>Qty</th>
+                    <th>Unit Price</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Enterprise Cloud Hosting License</td>
+                    <td>1</td>
+                    <td>$149.00</td>
+                    <td>$149.00</td>
+                  </tr>
+                  <tr>
+                    <td>SSL Wildcard Certificate (1 Year)</td>
+                    <td>2</td>
+                    <td>$45.00</td>
+                    <td>$90.00</td>
+                  </tr>
+                  <tr>
+                    <td>Automated Snapshot Backup Addon</td>
+                    <td>1</td>
+                    <td>$29.00</td>
+                    <td>$29.00</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3" style="text-align: right; font-weight: 600;">Subtotal:</td>
+                    <td>$268.00</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" style="text-align: right; font-weight: 600;">GST / Tax (18%):</td>
+                    <td>$48.24</td>
+                  </tr>
+                  <tr class="grand-total-row">
+                    <td colspan="3" style="text-align: right; font-weight: 800;">Grand Total Amount:</td>
+                    <td class="highlight-green">$316.24</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>&lt;thead&gt;</li>
+                <li>&lt;tbody&gt;</li>
+                <li>&lt;tfoot&gt;</li>
+                <li>colspan="3"</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">table</span>&gt;
+  &lt;<span class="html-tag">thead</span>&gt;
+    &lt;<span class="html-tag">tr</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Item Description&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Qty&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Unit Price&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Total&lt;/<span class="html-tag">th</span>&gt;
+    &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;/<span class="html-tag">thead</span>&gt;
+  &lt;<span class="html-tag">tbody</span>&gt;
+    &lt;<span class="html-tag">tr</span>&gt;
+      &lt;<span class="html-tag">td</span>&gt;Cloud Hosting License&lt;/<span class="html-tag">td</span>&gt;
+      &lt;<span class="html-tag">td</span>&gt;1&lt;/<span class="html-tag">td</span>&gt;
+      &lt;<span class="html-tag">td</span>&gt;$149.00&lt;/<span class="html-tag">td</span>&gt;
+      &lt;<span class="html-tag">td</span>&gt;$149.00&lt;/<span class="html-tag">td</span>&gt;
+    &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;/<span class="html-tag">tbody</span>&gt;
+  &lt;<span class="html-tag">tfoot</span>&gt;
+    &lt;<span class="html-tag">tr</span>&gt;
+      &lt;<span class="html-tag">td</span> <span class="html-attr">colspan</span>=<span class="html-val">"3"</span> <span class="html-attr">style</span>=<span class="html-val">"text-align: right;"</span>&gt;Grand Total:&lt;/<span class="html-tag">td</span>&gt;
+      &lt;<span class="html-tag">td</span>&gt;$316.24&lt;/<span class="html-tag">td</span>&gt;
+    &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;/<span class="html-tag">tfoot</span>&gt;
+&lt;/<span class="html-tag">table</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 2.2 Quarterly Financial Report -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>2. Multi-Row Semantic Header Report</h3>
+              <span class="badge">Finance</span>
+            </div>
+            <p class="card-desc">Grouped sub-headers inside <code>&lt;thead&gt;</code> and consolidated metric indicators.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table">
+                <thead>
+                  <tr class="accent-head-table">
+                    <th rowspan="2" style="vertical-align: middle;">Region</th>
+                    <th colspan="2" style="text-align: center;">2025 Revenue</th>
+                    <th colspan="2" style="text-align: center;">2026 Target</th>
+                  </tr>
+                  <tr>
+                    <th>Q1 Actual</th>
+                    <th>Q2 Actual</th>
+                    <th>Q1 Target</th>
+                    <th>YoY Growth</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>North America</td>
+                    <td>$420,000</td>
+                    <td>$485,000</td>
+                    <td>$550,000</td>
+                    <td><span class="status-pill status-active">+15.4%</span></td>
+                  </tr>
+                  <tr>
+                    <td>Europe &amp; UK</td>
+                    <td>$310,000</td>
+                    <td>$340,000</td>
+                    <td>$390,000</td>
+                    <td><span class="status-pill status-active">+9.8%</span></td>
+                  </tr>
+                  <tr>
+                    <td>Asia Pacific</td>
+                    <td>$560,000</td>
+                    <td>$630,000</td>
+                    <td>$720,000</td>
+                    <td><span class="status-pill status-active">+14.3%</span></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>Total Consolidated</td>
+                    <td>$1,290,000</td>
+                    <td>$1,455,000</td>
+                    <td>$1,660,000</td>
+                    <td class="highlight-cell">+14.1% Avg</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>multi-row thead</li>
+                <li>nested metrics</li>
+                <li>YoY growth</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">table</span>&gt;
+  &lt;<span class="html-tag">thead</span>&gt;
+    &lt;<span class="html-tag">tr</span>&gt;
+      &lt;<span class="html-tag">th</span> <span class="html-attr">rowspan</span>=<span class="html-val">"2"</span>&gt;Region&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span> <span class="html-attr">colspan</span>=<span class="html-val">"2"</span>&gt;2025 Revenue&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span> <span class="html-attr">colspan</span>=<span class="html-val">"2"</span>&gt;2026 Target&lt;/<span class="html-tag">th</span>&gt;
+    &lt;/<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">tr</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Q1 Actual&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Q2 Actual&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Q1 Target&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;YoY Growth&lt;/<span class="html-tag">th</span>&gt;
+    &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;/<span class="html-tag">thead</span>&gt;
+  &lt;<span class="html-tag">tbody</span>&gt;...&lt;/<span class="html-tag">tbody</span>&gt;
+&lt;/<span class="html-tag">table</span>&gt;</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SECTION 3: COLGROUP & COL STYLING
+    =================================================== -->
+    <section class="table-section" data-category="colgroup">
+      <div class="section-header">
+        <h2>3. Column Formatting (&lt;colgroup&gt; &amp; &lt;col&gt;)</h2>
+        <p class="section-desc">Apply column-wide widths and styling in a single clean tag without repeating inline styles on every single <code>&lt;td&gt;</code>.</p>
+      </div>
+
+      <div class="table-grid">
+
+        <!-- 3.1 Attendance Roster with Colgroup -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>1. Weekly Employee Attendance Tracker</h3>
+              <span class="badge">&lt;colgroup&gt;</span>
+            </div>
+            <p class="card-desc">Weekend columns automatically styled using <code>&lt;col class="col-weekend"&gt;</code>.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table colgroup-table">
+                <colgroup>
+                  <col class="col-info" />
+                  <col class="col-weekday" span="5" />
+                  <col class="col-weekend" span="2" />
+                </colgroup>
+                <thead>
+                  <tr class="accent-head-table">
+                    <th>Employee Name</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Raghavendra T.</strong></td>
+                    <td>✅ Present</td>
+                    <td>✅ Present</td>
+                    <td>✅ Present</td>
+                    <td>✅ Present</td>
+                    <td>✅ Present</td>
+                    <td>🏖️ Off</td>
+                    <td>🏖️ Off</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Samantha Bloom</strong></td>
+                    <td>✅ Present</td>
+                    <td>🏠 Remote</td>
+                    <td>✅ Present</td>
+                    <td>✅ Present</td>
+                    <td>🏠 Remote</td>
+                    <td>🏖️ Off</td>
+                    <td>🏖️ Off</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Alex Rivera</strong></td>
+                    <td>✅ Present</td>
+                    <td>✅ Present</td>
+                    <td>⚠️ Leave</td>
+                    <td>✅ Present</td>
+                    <td>✅ Present</td>
+                    <td>🏖️ Off</td>
+                    <td>🏖️ Off</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>&lt;colgroup&gt;</li>
+                <li>&lt;col span="5"&gt;</li>
+                <li>&lt;col span="2"&gt;</li>
+                <li>column styling</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML & CSS</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">table</span>&gt;
+  &lt;<span class="html-tag">colgroup</span>&gt;
+    &lt;<span class="html-tag">col</span> <span class="html-attr">class</span>=<span class="html-val">"col-info"</span> /&gt;
+    &lt;<span class="html-tag">col</span> <span class="html-attr">class</span>=<span class="html-val">"col-weekday"</span> <span class="html-attr">span</span>=<span class="html-val">"5"</span> /&gt;
+    &lt;<span class="html-tag">col</span> <span class="html-attr">class</span>=<span class="html-val">"col-weekend"</span> <span class="html-attr">span</span>=<span class="html-val">"2"</span> /&gt;
+  &lt;/<span class="html-tag">colgroup</span>&gt;
+  &lt;<span class="html-tag">thead</span>&gt;
+    &lt;<span class="html-tag">tr</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Employee Name&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Mon&lt;/<span class="html-tag">th</span>&gt;&lt;<span class="html-tag">th</span>&gt;Tue&lt;/<span class="html-tag">th</span>&gt;&lt;<span class="html-tag">th</span>&gt;Wed&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Thu&lt;/<span class="html-tag">th</span>&gt;&lt;<span class="html-tag">th</span>&gt;Fri&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Sat&lt;/<span class="html-tag">th</span>&gt;&lt;<span class="html-tag">th</span>&gt;Sun&lt;/<span class="html-tag">th</span>&gt;
+    &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;/<span class="html-tag">thead</span>&gt;
+&lt;/<span class="html-tag">table</span>&gt;</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SECTION 4: CELL SPANNING (COLSPAN & ROWSPAN)
+    =================================================== -->
+    <section class="table-section" data-category="spanning">
+      <div class="section-header">
+        <h2>4. Cell Spanning (colspan &amp; rowspan)</h2>
+        <p class="section-desc">Merge multiple horizontal columns or vertical rows to build rich matrices, super headers, and schedules.</p>
+      </div>
+
+      <div class="table-grid">
+
+        <!-- 4.1 Horizontal Column Spanning -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>1. Column Spanning (colspan)</h3>
+              <span class="badge">colspan</span>
+            </div>
+            <p class="card-desc">Merging columns horizontally across adjacent cells (e.g. grouped headers).</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table">
+                <tr>
+                  <th colspan="2" class="highlight-cell" style="text-align: center;">Personal Identity</th>
+                  <th colspan="2" class="highlight-cell" style="text-align: center;">Communication Details</th>
+                </tr>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email Address</th>
+                  <th>Direct Phone</th>
+                </tr>
+                <tr>
+                  <td>Raghavendra</td>
+                  <td>Tunkarapalli</td>
+                  <td>raghav@example.com</td>
+                  <td>+91 98765-43210</td>
+                </tr>
+                <tr>
+                  <td>Elena</td>
+                  <td>Rostova</td>
+                  <td>elena@example.com</td>
+                  <td>+1 555-0144</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>colspan="2"</li>
+                <li>grouped super headers</li>
+                <li>horizontal merge</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">table</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">th</span> <span class="html-attr">colspan</span>=<span class="html-val">"2"</span>&gt;Personal Identity&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span> <span class="html-attr">colspan</span>=<span class="html-val">"2"</span>&gt;Communication Details&lt;/<span class="html-tag">th</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;First Name&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Last Name&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Email Address&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Direct Phone&lt;/<span class="html-tag">th</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Raghavendra&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Tunkarapalli&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;raghav@example.com&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;+91 98765-43210&lt;/<span class="html-tag">td</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+&lt;/<span class="html-tag">table</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 4.2 Vertical Row Spanning -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>2. Row Spanning (rowspan)</h3>
+              <span class="badge">rowspan</span>
+            </div>
+            <p class="card-desc">Merging rows vertically across contiguous record rows.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table">
+                <thead>
+                  <tr class="accent-head-table">
+                    <th>Shift Timing</th>
+                    <th>Day</th>
+                    <th>Lead Engineer</th>
+                    <th>Support Specialty</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="2" class="highlight-cell" style="vertical-align: middle;"><strong>Morning Shift</strong><br>(8:00 AM - 2:00 PM)</td>
+                    <td>Monday</td>
+                    <td>Alex Rivera</td>
+                    <td>DevOps & CI/CD</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>Samantha Bloom</td>
+                    <td>Cloud Infrastructure</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="highlight-cell" style="vertical-align: middle;"><strong>Evening Shift</strong><br>(2:00 PM - 8:00 PM)</td>
+                    <td>Monday</td>
+                    <td>Vikram Seth</td>
+                    <td>Database & Security</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>Mei Ling</td>
+                    <td>API Gateway Lead</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>rowspan="2"</li>
+                <li>vertical-align: middle</li>
+                <li>category grouping</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">table</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Shift Timing&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Day&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Lead Engineer&lt;/<span class="html-tag">th</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">td</span> <span class="html-attr">rowspan</span>=<span class="html-val">"2"</span>&gt;Morning Shift&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Monday&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Alex Rivera&lt;/<span class="html-tag">td</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Tuesday&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Samantha Bloom&lt;/<span class="html-tag">td</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+&lt;/<span class="html-tag">table</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 4.3 Full Matrix Timetable (Both Combined) -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>3. College Academic Timetable (2D Matrix)</h3>
+              <span class="badge">Master Matrix</span>
+            </div>
+            <p class="card-desc">Combining both <code>colspan</code> and <code>rowspan</code> seamlessly for complex schedules.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table timetable-matrix" style="text-align: center;">
+                <thead>
+                  <tr class="accent-head-table">
+                    <th>Day</th>
+                    <th>9:00 - 10:30 AM</th>
+                    <th>10:45 - 12:15 PM</th>
+                    <th>12:15 - 1:15 PM</th>
+                    <th>1:15 - 3:15 PM</th>
+                    <th>3:30 - 5:00 PM</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Mon</th>
+                    <td>Data Structures</td>
+                    <td>Web Technologies</td>
+                    <td rowspan="5" class="lunch-cell">L<br>U<br>N<br>C<br>H<br><br>B<br>R<br>E<br>A<br>K</td>
+                    <td colspan="2" class="highlight-green">Full Stack Java Lab (3.5 hrs)</td>
+                  </tr>
+                  <tr>
+                    <th>Tue</th>
+                    <td>Algorithms &amp; Logic</td>
+                    <td>Computer Networks</td>
+                    <td>Software Engineering</td>
+                    <td>Technical Seminar</td>
+                  </tr>
+                  <tr>
+                    <th>Wed</th>
+                    <td>Operating Systems</td>
+                    <td>Cloud &amp; DevOps</td>
+                    <td colspan="2" class="highlight-green">Web Dev Hands-on Project</td>
+                  </tr>
+                  <tr>
+                    <th>Thu</th>
+                    <td>Database Architecture</td>
+                    <td>AI &amp; Neural Nets</td>
+                    <td>System Design</td>
+                    <td>Open Elective</td>
+                  </tr>
+                  <tr>
+                    <th>Fri</th>
+                    <td colspan="2" class="highlight-green">Full Stack Capstone Review</td>
+                    <td>Sports / Fitness</td>
+                    <td>Library Research</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>rowspan="5" (Lunch)</li>
+                <li>colspan="2" (Lab)</li>
+                <li>matrix alignment</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">table</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Day&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;9:00 - 10:30 AM&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;10:45 - 12:15 PM&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;12:15 - 1:15 PM&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;1:15 - 3:15 PM&lt;/<span class="html-tag">th</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;<span class="html-tag">tr</span>&gt;
+    &lt;<span class="html-tag">th</span>&gt;Mon&lt;/<span class="html-tag">th</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Data Structures&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span>&gt;Web Tech&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span> <span class="html-attr">rowspan</span>=<span class="html-val">"5"</span>&gt;LUNCH BREAK&lt;/<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">td</span> <span class="html-attr">colspan</span>=<span class="html-val">"2"</span>&gt;Full Stack Java Lab&lt;/<span class="html-tag">td</span>&gt;
+  &lt;/<span class="html-tag">tr</span>&gt;
+&lt;/<span class="html-tag">table</span>&gt;</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SECTION 5: REAL-WORLD PRODUCTION TABLES
+    =================================================== -->
+    <section class="table-section" data-category="realworld">
+      <div class="section-header">
+        <h2>5. Real-World Production Tables</h2>
+        <p class="section-desc">Production-grade table architectures: SaaS Feature &amp; Pricing matrix, User Management Data Grid, and Tournament Leaderboards.</p>
+      </div>
+
+      <div class="table-grid">
+
+        <!-- 5.1 SaaS Pricing & Comparison -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>1. SaaS Pricing &amp; Feature Comparison Matrix</h3>
+              <span class="badge">SaaS Matrix</span>
+            </div>
+            <p class="card-desc">Comparative tiers with featured plan highlighting, checkmarks, and badges.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table pricing-table">
+                <thead>
+                  <tr>
+                    <th style="text-align: left; width: 34%;">Feature Matrix</th>
+                    <th style="width: 22%;">Starter<br><span class="price-tag">$0/mo</span></th>
+                    <th class="featured-col-header" style="width: 22%;">Pro Developer ⭐<br><span class="price-tag">$29/mo</span></th>
+                    <th style="width: 22%;">Enterprise<br><span class="price-tag">$99/mo</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="feat-name">HTML5 Media Player Engine</td>
+                    <td>✓ 720p Std</td>
+                    <td class="featured-col">✓ 4K Ultra HD</td>
+                    <td>✓ 8K + Custom CDN</td>
+                  </tr>
+                  <tr>
+                    <td class="feat-name">Live Code Sandboxes</td>
+                    <td>5 Active</td>
+                    <td class="featured-col">Unlimited</td>
+                    <td>Unlimited + Multi-tenant</td>
+                  </tr>
+                  <tr>
+                    <td class="feat-name">Cloud Storage</td>
+                    <td>2 GB</td>
+                    <td class="featured-col">100 GB NVMe</td>
+                    <td>10 TB Dedicated</td>
+                  </tr>
+                  <tr>
+                    <td class="feat-name">API Request Rate Limit</td>
+                    <td>1,000 / day</td>
+                    <td class="featured-col">100,000 / day</td>
+                    <td>Unlimited Dedicated</td>
+                  </tr>
+                  <tr>
+                    <td class="feat-name">Customer Support</td>
+                    <td>Community Forum</td>
+                    <td class="featured-col">Priority Email (2h)</td>
+                    <td>24/7 Dedicated Slack</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>pricing matrix</li>
+                <li>featured column</li>
+                <li>comparison grid</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML & CSS</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">table</span> <span class="html-attr">class</span>=<span class="html-val">"pricing-table"</span>&gt;
+  &lt;<span class="html-tag">thead</span>&gt;
+    &lt;<span class="html-tag">tr</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Feature Matrix&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Starter ($0)&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span> <span class="html-attr">class</span>=<span class="html-val">"featured-col-header"</span>&gt;Pro Developer ($29)&lt;/<span class="html-tag">th</span>&gt;
+      &lt;<span class="html-tag">th</span>&gt;Enterprise ($99)&lt;/<span class="html-tag">th</span>&gt;
+    &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;/<span class="html-tag">thead</span>&gt;
+  &lt;<span class="html-tag">tbody</span>&gt;
+    &lt;<span class="html-tag">tr</span>&gt;
+      &lt;<span class="html-tag">td</span>&gt;Media Player Engine&lt;/<span class="html-tag">td</span>&gt;
+      &lt;<span class="html-tag">td</span>&gt;✓ 720p&lt;/<span class="html-tag">td</span>&gt;
+      &lt;<span class="html-tag">td</span> <span class="html-attr">class</span>=<span class="html-val">"featured-col"</span>&gt;✓ 4K Ultra HD&lt;/<span class="html-tag">td</span>&gt;
+      &lt;<span class="html-tag">td</span>&gt;✓ 8K CDN&lt;/<span class="html-tag">td</span>&gt;
+    &lt;/<span class="html-tag">tr</span>&gt;
+  &lt;/<span class="html-tag">tbody</span>&gt;
+&lt;/<span class="html-tag">table</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 5.2 Admin User Management Data Grid -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>2. Admin Dashboard &amp; User Data Grid</h3>
+              <span class="badge">Dashboard UI</span>
+            </div>
+            <p class="card-desc">Interactive data table with user avatars, roles, badges, and action buttons.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table user-table">
+                <thead>
+                  <tr class="accent-head-table">
+                    <th>User / Member</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Last Active</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="user-cell">
+                        <div class="user-avatar" style="background: #2563eb;">RT</div>
+                        <div>
+                          <div class="user-name">Raghavendra Tunkarapalli</div>
+                          <div class="user-email">raghavendra@tap.ac</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span class="role-badge role-admin">Admin</span></td>
+                    <td><span class="status-pill status-active">● Active</span></td>
+                    <td>Just now</td>
+                    <td>
+                      <div class="action-btn-group">
+                        <button class="tbl-btn edit-btn">Edit</button>
+                        <button class="tbl-btn del-btn">Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-cell">
+                        <div class="user-avatar" style="background: #10b981;">PS</div>
+                        <div>
+                          <div class="user-name">Priya Sharma</div>
+                          <div class="user-email">priya.sharma@domain.io</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span class="role-badge role-editor">Lead Architect</span></td>
+                    <td><span class="status-pill status-active">● Active</span></td>
+                    <td>12 mins ago</td>
+                    <td>
+                      <div class="action-btn-group">
+                        <button class="tbl-btn edit-btn">Edit</button>
+                        <button class="tbl-btn del-btn">Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user-cell">
+                        <div class="user-avatar" style="background: #f59e0b;">KV</div>
+                        <div>
+                          <div class="user-name">Karthik Verma</div>
+                          <div class="user-email">karthik.v@domain.io</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span class="role-badge role-viewer">Viewer</span></td>
+                    <td><span class="status-pill status-pending">● Suspended</span></td>
+                    <td>2 days ago</td>
+                    <td>
+                      <div class="action-btn-group">
+                        <button class="tbl-btn edit-btn">Edit</button>
+                        <button class="tbl-btn del-btn">Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>avatar cells</li>
+                <li>status pills</li>
+                <li>action buttons</li>
+                <li>flexbox inside td</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">tr</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;
+    &lt;<span class="html-tag">div</span> <span class="html-attr">class</span>=<span class="html-val">"user-cell"</span>&gt;
+      &lt;<span class="html-tag">div</span> <span class="html-attr">class</span>=<span class="html-val">"user-avatar"</span>&gt;RT&lt;/<span class="html-tag">div</span>&gt;
+      &lt;<span class="html-tag">div</span>&gt;
+        &lt;<span class="html-tag">div</span> <span class="html-attr">class</span>=<span class="html-val">"user-name"</span>&gt;Raghavendra T.&lt;/<span class="html-tag">div</span>&gt;
+        &lt;<span class="html-tag">div</span> <span class="html-attr">class</span>=<span class="html-val">"user-email"</span>&gt;raghav@tap.ac&lt;/<span class="html-tag">div</span>&gt;
+      &lt;/<span class="html-tag">div</span>&gt;
+    &lt;/<span class="html-tag">div</span>&gt;
+  &lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;&lt;<span class="html-tag">span</span> <span class="html-attr">class</span>=<span class="html-val">"role-badge"</span>&gt;Admin&lt;/<span class="html-tag">span</span>&gt;&lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;&lt;<span class="html-tag">span</span> <span class="html-attr">class</span>=<span class="html-val">"status-pill"</span>&gt;● Active&lt;/<span class="html-tag">span</span>&gt;&lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;Just now&lt;/<span class="html-tag">td</span>&gt;
+&lt;/<span class="html-tag">tr</span>&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- 5.3 Premier League Standings / Tournament Table -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>3. Sports League Standings Table</h3>
+              <span class="badge">Sports / Ranking</span>
+            </div>
+            <p class="card-desc">Rank indicators, form badges (Wins, Draws, Losses), and numerical data alignment.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table league-table" style="text-align: center;">
+                <thead>
+                  <tr class="accent-head-table">
+                    <th>#</th>
+                    <th style="text-align: left;">Club / Team</th>
+                    <th>MP</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>GD</th>
+                    <th>PTS</th>
+                    <th>Recent Form</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="top-rank-row">
+                    <td><strong>1</strong></td>
+                    <td style="text-align: left;"><strong>🔴 Arsenal FC</strong></td>
+                    <td>28</td>
+                    <td>20</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>+38</td>
+                    <td><strong class="pts-highlight">65</strong></td>
+                    <td><span class="form-dot win">W</span><span class="form-dot win">W</span><span class="form-dot win">W</span><span class="form-dot draw">D</span><span class="form-dot win">W</span></td>
+                  </tr>
+                  <tr class="top-rank-row">
+                    <td><strong>2</strong></td>
+                    <td style="text-align: left;"><strong>🔵 Manchester City</strong></td>
+                    <td>28</td>
+                    <td>19</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>+35</td>
+                    <td><strong class="pts-highlight">63</strong></td>
+                    <td><span class="form-dot win">W</span><span class="form-dot win">W</span><span class="form-dot draw">D</span><span class="form-dot win">W</span><span class="form-dot win">W</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>3</strong></td>
+                    <td style="text-align: left;"><strong>🔴 Liverpool FC</strong></td>
+                    <td>28</td>
+                    <td>19</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>+32</td>
+                    <td><strong class="pts-highlight">62</strong></td>
+                    <td><span class="form-dot loss">L</span><span class="form-dot win">W</span><span class="form-dot win">W</span><span class="form-dot win">W</span><span class="form-dot draw">D</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>4</strong></td>
+                    <td style="text-align: left;"><strong>⚪ Real Madrid</strong></td>
+                    <td>28</td>
+                    <td>18</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>+28</td>
+                    <td><strong class="pts-highlight">60</strong></td>
+                    <td><span class="form-dot win">W</span><span class="form-dot draw">D</span><span class="form-dot win">W</span><span class="form-dot win">W</span><span class="form-dot loss">L</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>leaderboard</li>
+                <li>numerical alignment</li>
+                <li>form badges (W/D/L)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">HTML</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code>&lt;<span class="html-tag">tr</span> <span class="html-attr">class</span>=<span class="html-val">"top-rank-row"</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;1&lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;Arsenal FC&lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;28&lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;20&lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;5&lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;3&lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;+38&lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span> <span class="html-attr">class</span>=<span class="html-val">"pts-highlight"</span>&gt;65&lt;/<span class="html-tag">td</span>&gt;
+  &lt;<span class="html-tag">td</span>&gt;&lt;<span class="html-tag">span</span> <span class="html-attr">class</span>=<span class="html-val">"form-dot win"</span>&gt;W&lt;/<span class="html-tag">span</span>&gt;&lt;/<span class="html-tag">td</span>&gt;
+&lt;/<span class="html-tag">tr</span>&gt;</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SECTION 6: ADVANCED CSS TABLE STYLING
+    =================================================== -->
+    <section class="table-section" data-category="styling">
+      <div class="section-header">
+        <h2>6. Advanced CSS Table Styling</h2>
+        <p class="section-desc">Key CSS properties: Zebra striping (<code>:nth-child</code>), Sticky headers, <code>table-layout: fixed</code>, and responsive scroll wrappers.</p>
+      </div>
+
+      <div class="table-grid">
+
+        <!-- 6.1 Zebra Striped Marksheet -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>1. Zebra-Striped Student Marksheet</h3>
+              <span class="badge">:nth-child(even)</span>
+            </div>
+            <p class="card-desc">Alternating background colors improve horizontal tracking across large tables.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table striped-table">
+                <thead>
+                  <tr class="accent-head-table">
+                    <th>Roll No</th>
+                    <th>Student Name</th>
+                    <th>Subject</th>
+                    <th>Score</th>
+                    <th>Grade</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>101</td>
+                    <td>Aarav Patel</td>
+                    <td>Advanced Mathematics</td>
+                    <td>96 / 100</td>
+                    <td><strong>O (96%)</strong></td>
+                    <td><span class="status-pill status-active">Distinction</span></td>
+                  </tr>
+                  <tr>
+                    <td>102</td>
+                    <td>Sneha Gupta</td>
+                    <td>Quantum Physics</td>
+                    <td>89 / 100</td>
+                    <td><strong>A+ (89%)</strong></td>
+                    <td><span class="status-pill status-active">First Class</span></td>
+                  </tr>
+                  <tr>
+                    <td>103</td>
+                    <td>Rahul Rao</td>
+                    <td>Computer Architecture</td>
+                    <td>98 / 100</td>
+                    <td><strong>O (98%)</strong></td>
+                    <td><span class="status-pill status-active">Distinction</span></td>
+                  </tr>
+                  <tr>
+                    <td>104</td>
+                    <td>Zoya Khan</td>
+                    <td>Digital Signal Processing</td>
+                    <td>84 / 100</td>
+                    <td><strong>A (84%)</strong></td>
+                    <td><span class="status-pill status-active">First Class</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>tbody tr:nth-child(even)</li>
+                <li>tbody tr:hover</li>
+                <li>transition: background</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">CSS</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code><span class="comment">/* Zebra Striping */</span>
+<span class="html-tag">.striped-table</span> <span class="html-tag">tbody tr:nth-child(even)</span> {
+  <span class="html-attr">background-color</span>: <span class="html-val">#f1f5f9</span>;
+}
+
+<span class="comment">/* Hover Highlight */</span>
+<span class="html-tag">.striped-table</span> <span class="html-tag">tbody tr:hover</span> {
+  <span class="html-attr">background-color</span>: <span class="html-val">#e0e7ff</span>;
+  <span class="html-attr">transition</span>: <span class="html-val">background 0.15s ease</span>;
+}</code></pre>
+          </div>
+        </div>
+
+        <!-- 6.2 Sticky Header Scrollable Table -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>2. Sticky Header Scrollable Data Table</h3>
+              <span class="badge">position: sticky</span>
+            </div>
+            <p class="card-desc">Keeps column headers pinned in place while scrolling down a tall dataset.</p>
+            
+            <div class="table-preview-wrapper sticky-scroll-box">
+              <table class="custom-table sticky-header-table">
+                <thead>
+                  <tr class="accent-head-table">
+                    <th>Transaction ID</th>
+                    <th>Client</th>
+                    <th>Method</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>#TXN-9081</code></td>
+                    <td>Google LLC</td>
+                    <td>Wire Transfer</td>
+                    <td>$12,450.00</td>
+                    <td><span class="status-pill status-active">Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>#TXN-9082</code></td>
+                    <td>Meta Platforms</td>
+                    <td>Stripe Card</td>
+                    <td>$4,200.00</td>
+                    <td><span class="status-pill status-active">Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>#TXN-9083</code></td>
+                    <td>Stripe Inc</td>
+                    <td>Direct ACH</td>
+                    <td>$8,900.00</td>
+                    <td><span class="status-pill status-active">Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>#TXN-9084</code></td>
+                    <td>Netflix Inc</td>
+                    <td>MasterCard</td>
+                    <td>$2,750.00</td>
+                    <td><span class="status-pill status-active">Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>#TXN-9085</code></td>
+                    <td>Amazon AWS</td>
+                    <td>Wire Transfer</td>
+                    <td>$18,920.00</td>
+                    <td><span class="status-pill status-active">Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td><code>#TXN-9086</code></td>
+                    <td>Spotify AB</td>
+                    <td>Visa Business</td>
+                    <td>$3,400.00</td>
+                    <td><span class="status-pill status-active">Completed</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>position: sticky</li>
+                <li>top: 0</li>
+                <li>overflow-y: auto</li>
+                <li>max-height: 200px</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">CSS</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code><span class="comment">/* Container with fixed height & scroll */</span>
+<span class="html-tag">.sticky-scroll-box</span> {
+  <span class="html-attr">max-height</span>: <span class="html-val">220px</span>;
+  <span class="html-attr">overflow-y</span>: <span class="html-val">auto</span>;
+}
+
+<span class="comment">/* Pinned header row */</span>
+<span class="html-tag">.sticky-header-table thead th</span> {
+  <span class="html-attr">position</span>: <span class="html-val">sticky</span>;
+  <span class="html-attr">top</span>: <span class="html-val">0</span>;
+  <span class="html-attr">z-index</span>: <span class="html-val">2</span>;
+}</code></pre>
+          </div>
+        </div>
+
+        <!-- 6.3 Fixed Table Layout with Truncation -->
+        <div class="table-card-layout">
+          <div class="table-card">
+            <div class="card-title-row">
+              <h3>3. Fixed Layout &amp; Text Truncation</h3>
+              <span class="badge">table-layout: fixed</span>
+            </div>
+            <p class="card-desc"><code>table-layout: fixed;</code> computes widths strictly from the first row for high-performance rendering.</p>
+            
+            <div class="table-preview-wrapper">
+              <table class="custom-table fixed-layout-table">
+                <thead>
+                  <tr class="accent-head-table">
+                    <th style="width: 20%;">Endpoint</th>
+                    <th style="width: 20%;">Method</th>
+                    <th style="width: 60%;">Payload / URL Query String (Truncated)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>/api/v2/users</code></td>
+                    <td><span class="method-badge get">GET</span></td>
+                    <td class="truncate-cell" title="https://api.tapacademy.com/v2/users?page=1&limit=50&filter=developer&sort=asc&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9">https://api.tapacademy.com/v2/users?page=1&amp;limit=50&amp;filter=developer&amp;sort=asc&amp;token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9</td>
+                  </tr>
+                  <tr>
+                    <td><code>/api/v2/auth</code></td>
+                    <td><span class="method-badge post">POST</span></td>
+                    <td class="truncate-cell" title="https://api.tapacademy.com/v2/auth/token?grant_type=authorization_code&client_id=production_suite_auth_key_9981">https://api.tapacademy.com/v2/auth/token?grant_type=authorization_code&amp;client_id=production_suite_auth_key_9981</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-features">
+              <ul class="properties-list">
+                <li>table-layout: fixed</li>
+                <li>text-overflow: ellipsis</li>
+                <li>white-space: nowrap</li>
+                <li>overflow: hidden</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <div class="code-box-header">
+              <span class="code-lang">CSS</span>
+              <button class="copy-btn" title="Copy code">Copy</button>
+            </div>
+            <pre><code><span class="html-tag">table</span> {
+  <span class="html-attr">table-layout</span>: <span class="html-val">fixed</span>;
+  <span class="html-attr">width</span>: <span class="html-val">100%</span>;
+}
+
+<span class="html-tag">.truncate-cell</span> {
+  <span class="html-attr">white-space</span>: <span class="html-val">nowrap</span>;
+  <span class="html-attr">overflow</span>: <span class="html-val">hidden</span>;
+  <span class="html-attr">text-overflow</span>: <span class="html-val">ellipsis</span>;
+}</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===================================================
+       FOOTER
+  =================================================== -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p><strong>HTML Tables Project</strong> • Designed for Tap Academy Frontend Mastery</p>
+      <div class="footer-links">
+        <a href="../Media/index.html">Media Player</a>
+        <a href="../Lists/index.html">List Project</a>
+        <a href="../Traveler_Vlog/index.html">Traveler Vlog</a>
+        <a href="https://tunkarapalliraghavendraportfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
+        <a href="#nav">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       CLIENT-SIDE JAVASCRIPT
+  =================================================== -->
+  <script>
+    // 1. Copy to Clipboard Functionality
+    document.querySelectorAll('.copy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const codeBox = button.closest('.code-box');
+        const codeElement = codeBox.querySelector('pre code');
+        const textToCopy = codeElement.innerText;
+
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          const originalText = button.textContent;
+          button.textContent = 'Copied! ✓';
+          button.classList.add('copied');
+          setTimeout(() => {
+            button.textContent = originalText;
+            button.classList.remove('copied');
+          }, 2000);
+        }).catch(err => {
+          console.error('Failed to copy code: ', err);
+        });
+      });
+    });
+
+    // 2. Real-Time Search Functionality
+    const searchInput = document.getElementById('searchInput');
+    const tableCards = document.querySelectorAll('.table-card-layout');
+    const tableSections = document.querySelectorAll('.table-section');
+
+    searchInput.addEventListener('input', function () {
+      const query = this.value.trim().toLowerCase();
+
+      tableCards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (query === '' || text.includes(query)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      tableSections.forEach(section => {
+        const visibleItems = section.querySelectorAll(
+          '.table-card-layout:not([style*="display: none"])'
+        );
+        let emptyNotice = section.querySelector('.no-results');
+
+        if (visibleItems.length === 0) {
+          if (!emptyNotice) {
+            emptyNotice = document.createElement('p');
+            emptyNotice.className = 'no-results';
+            emptyNotice.textContent = 'No matching tables found in this section.';
+            section.appendChild(emptyNotice);
+          }
+          emptyNotice.style.display = 'block';
+        } else if (emptyNotice) {
+          emptyNotice.style.display = 'none';
+        }
+      });
+    });
+
+    // 3. Category Filter Buttons
+    const filterButtons = document.querySelectorAll('.filter-btn');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        tableSections.forEach(section => {
+          if (filter === 'all' || section.getAttribute('data-category') === filter) {
+            section.style.display = '';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
