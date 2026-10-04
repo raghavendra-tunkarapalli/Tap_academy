@@ -1,0 +1,42 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "routes": [
+    {
+      "src": "^/$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "^/media/?$",
+      "dest": "/Media/index.html"
+    },
+    {
+      "src": "^/lists/?$",
+      "dest": "/Lists/index.html"
+    },
+    {
+      "src": "^/tables/?$",
+      "dest": "/Tables/index.html"
+    },
+    {
+      "src": "^/traveler-vlog/?$",
+      "dest": "/Traveler_Vlog/index.html"
+    },
+    {
+      "src": "^/Traveler_Vlog/?$",
+      "dest": "/Traveler_Vlog/index.html"
+    },
+    {
+      "src": "^/Media/?$",
+      "dest": "/Media/index.html"
+    },
+    {
+      "src": "^/Lists/?$",
+      "dest": "/Lists/index.html"
+    },
+    {
+      "src": "^/Tables/?$",
+      "dest": "/Tables/index.html"
+    }
+  ]
+}
