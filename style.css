@@ -106,6 +106,13 @@ body {
     transform: translateY(-1px);
 }
 
+.project-nav li a[aria-current="page"] {
+    color: #ffffff;
+    background: var(--accent-gradient);
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
 .search-wrapper {
     position: relative;
 }
